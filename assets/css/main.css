@@ -3619,6 +3619,8 @@ iframe {
 }
 .header-common-adjustment .topheader-mainheader {
   width: calc(100% - 250px);
+  display:flex;
+  justify-content: flex-end;
 }
 @media screen and (max-width: 1350px) {
   .header-common-adjustment .logo-v04 {
@@ -4608,7 +4610,7 @@ iframe {
   }
 }
 .banner-section.style-v3 .hero-contentv03 {
-  padding: 190px 0 177px;
+  padding: 80px 0 177px;
 }
 .banner-section.style-v3 .hero-contentv03 .sun-star {
   display: flex;
