@@ -409,7 +409,8 @@
 				max-width: 1314px;
 			}
 		}
-		background: url(../img/banner/hero1-bg.png) no-repeat center center;
+		// background: url(../img/banner/hero1-bg.png) no-repeat center center;
+		background: var(--p900-clr);
 		background-size: cover;
 		padding-top: 80px;
 		.hero-contentv03 {

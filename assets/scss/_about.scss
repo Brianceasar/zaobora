@@ -2,6 +2,7 @@
 .about-section {
 	&.style-v01 {
 		overflow: hidden;
+		margin: 0 0 200px 0;
 		.about-thumv01 {
 			width: 100%;
 			padding: 0 50px;
@@ -131,7 +132,9 @@
 		position: relative;
 		width: 100%;
 		.mimg {
-			width: 100%;
+			width: 80%;
+			border-radius: 50px;
+
 		}
 		.avarage-counting {
 			border-radius: 100px;
