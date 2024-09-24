@@ -584,14 +584,15 @@
 }
 //Header Style v04
 .header-common-adjustment {
-	width: 100%;
+	width: 95%;
 	display: flex;
 	align-items: center;
 
 	.logo-v04 {
-		background: $p1-clr;
+		// background: $p1-clr;
 		width: 250px;
-		height: 138px;
+		height: 55px;
+    	margin: 25px 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -602,7 +603,7 @@
 	@media screen and (max-width: 1350px) {
 		.logo-v04 {
 			width: 160px;
-			height: 138px;
+			height: 55px;
 			img {
 				width: 120px;
 			}
@@ -685,6 +686,7 @@
 	top: 0 !important;
 	left: 0;
 	width: 100%;
+	padding: 0 7px 0 10px;
 	z-index: 100;
 	transition: all 0.9s;
 	background-color: $white-clr;

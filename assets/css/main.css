@@ -3607,14 +3607,14 @@ iframe {
 }
 
 .header-common-adjustment {
-  width: 100%;
+  width: 95%;
   display: flex;
   align-items: center;
 }
 .header-common-adjustment .logo-v04 {
-  background: var(--p1-clr);
   width: 250px;
-  height: 138px;
+  height: 55px;
+  margin: 25px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3625,7 +3625,7 @@ iframe {
 @media screen and (max-width: 1350px) {
   .header-common-adjustment .logo-v04 {
     width: 160px;
-    height: 138px;
+    height: 55px;
   }
   .header-common-adjustment .logo-v04 img {
     width: 120px;
@@ -3700,6 +3700,7 @@ iframe {
   top: 0 !important;
   left: 0;
   width: 100%;
+  padding: 0 7px 0 10px;
   z-index: 100;
   transition: all 0.9s;
   background-color: var(--white-clr);
