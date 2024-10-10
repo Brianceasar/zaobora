@@ -2075,6 +2075,17 @@ span {
   -webkit-text-stroke: 1px var(--white-clr);
   text-stroke: 1px var(--white-clr);
 }
+.subscribe-wrapper-v02 .subs-contentv2 h4 {
+  color: var(--white-clr);
+  font-weight: 400;
+}
+.subscribe-wrapper-v02 .subs-contentv2 h4 span {
+  font-size: 30px;
+  line-height: 40px;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white-clr);
+  text-stroke: 1px var(--white-clr);
+}
 @media (max-width: 991px) {
   .subscribe-wrapper-v02 {
     padding: 40px 10px;

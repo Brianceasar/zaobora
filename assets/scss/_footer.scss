@@ -411,6 +411,17 @@
 				text-stroke: 1px $white-clr;
 			}
 		}
+		h4 {
+			color: $white-clr;
+			font-weight: 400;
+			span {
+				font-size: 30px;
+				line-height: 40px;
+				color: transparent;
+				-webkit-text-stroke: 1px $white-clr;
+				text-stroke: 1px $white-clr;
+			}
+		}
 	}
 	@include breakpoint(max-lg) {
 		padding: 40px 10px;
