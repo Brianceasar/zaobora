@@ -3,6 +3,9 @@
 	&.style-v01 {
 		overflow: hidden;
 		margin: 0 0 200px 0;
+		@media screen and (max-width:480px) {
+			margin: 0 0 50px 0 !important;
+		}
 		.about-thumv01 {
 			width: 100%;
 			padding: 0 50px;
@@ -134,8 +137,11 @@
 		.mimg {
 			width: 80%;
 			border-radius: 50px;
-
+			@media screen and (max-width: 480px) { 
+				display: none;
+			}
 		}
+		
 		.avarage-counting {
 			border-radius: 100px;
 			padding: 14px 20px 14px 14px;

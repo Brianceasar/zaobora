@@ -184,6 +184,9 @@
 			padding: 24px;
 			width: 100%;
 			margin: 0px 0 0 auto;
+			@media screen and  (max-width: 480px){
+				top: -80px !important;
+			}
 			.comment-inner {
 				margin-bottom: 12px;
 			}
@@ -225,6 +228,7 @@
 			}
 		}
 	}
+	
 }
 .comment-inner {
 	display: flex;

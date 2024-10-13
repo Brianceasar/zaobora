@@ -608,6 +608,25 @@
 	.topheader-mainheader {
 		width: calc(100% - 250px);
 	}
+	@media screen and (max-width: 480px) {
+		.logo-v05{
+			height: 5px;
+			width: 50px;
+			img{
+				width: 60px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		.logo-v05 {
+			height: 5px !important;
+			width: 50px !important;
+			img{
+				width: 60px !important;
+			}
+		}
+	}
 	@media screen and (max-width: 1350px) {
 		.logo-v04 {
 			width: 180px;
@@ -617,9 +636,9 @@
 			}
 		}
 		.logo-v05 {
-			width: 50px;
-			height: 55px;
-			img {
+			height: 180;
+			width: 55px;
+			img{
 				width: 120px;
 			}
 		}
@@ -632,7 +651,11 @@
 			display: none;
 		}
 		.logo-v05 {
-			display: none;
+			height: 5px;
+			width: 50px;
+			img{
+				width: 60px;
+			}
 		}
 		.topheader-mainheader {
 			width: calc(100%);
@@ -820,6 +843,7 @@
 			background-color: $p1-clr;
 			position: relative;
 			z-index: 9;
+			left: 220px;
 			cursor: pointer;
 
 			i {
