@@ -3673,11 +3673,11 @@ iframe {
 }
 @media screen and (max-width: 480px) {
   .header-common-adjustment-landing .logo-v05 {
-    height: 5px !important;
-    width: 50px !important;
+    height: 35px !important;
+    width: 80px !important;
   }
   .header-common-adjustment-landing .logo-v05 img {
-    width: 60px !important;
+    width: 95px !important;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -5009,7 +5009,7 @@ iframe {
   }
 }
 .breadcrumnd-banner {
-  background: url(../img/about/bread-bg.png) no-repeat center center;
+  background: url(../img/about/aboutv-3.png) no-repeat center center;
   background-size: cover;
   position: relative;
   padding: 150px 0;
