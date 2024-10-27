@@ -3689,7 +3689,7 @@ iframe {
     width: 120px;
   }
   .header-common-adjustment-landing .logo-v05 {
-    height: 180;
+    height: 78px;
     width: 55px;
   }
   .header-common-adjustment-landing .logo-v05 img {
@@ -7045,7 +7045,7 @@ iframe {
   top: 0;
   width: 100%;
   z-index: 9999999;
-  background: rgba(243, 243, 243, 0.87);
+  background: rgba(42, 100, 51, 0.87);
 }
 .preloader img {
   width: 120px;
