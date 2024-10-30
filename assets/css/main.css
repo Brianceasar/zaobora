@@ -7740,6 +7740,24 @@ input.main-search-input::placeholder {
   }
 }
 
+.servicev3-section {
+  background-attachment: fixed; /* Keeps the background image fixed */
+  background-size: cover; /* Adjusts image to cover the entire section */
+  background-position: center; /* Centers the background image */
+  height: 100vh; /* Makes section full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-cards {
+  max-height: 80vh; /* Sets height for visible cards */
+  overflow-y: scroll; /* Allows scrolling within the container */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  border-radius: 8px;
+}
+
 .feature-itemsv1 {
   display: flex;
   align-items: center;

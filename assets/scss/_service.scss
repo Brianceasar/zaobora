@@ -307,6 +307,26 @@
 		}
 	}
 }
+.servicev3-section {
+    // position: relative;
+    // background-image: url('assets/img/service/tree-background.png' ) !important;
+    background-attachment: fixed;  /* Keeps the background image fixed */
+    background-size: cover;        /* Adjusts image to cover the entire section */
+    background-position: center;   /* Centers the background image */
+    height: 100vh;                 /* Makes section full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	
+}
+.service-cards {
+    max-height: 80vh;              /* Sets height for visible cards */
+    overflow-y: scroll;            /* Allows scrolling within the container */
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;     /* Firefox */
+    border-radius: 8px;
+    // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to the cards */
+}
 // Service Details Section
 
 // Feature Section
