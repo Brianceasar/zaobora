@@ -244,23 +244,27 @@
                 <div class="container">
                     <div class="row g-4 justify-content-between">
                         <div class="col-lg-12 col-md-12 conatact-box " >
-                            <form action="#" class="row g-xl-4 g-3">
+                            <form 
+                                action="https://formspree.io/f/xwpklkgl"
+                                method="POST" class="row g-xl-4 g-3">
                                 <div class="col-lg-12">
-                                    <h5 class="p1-clr wow fadeInLeft pb-2   " data-wow-delay="0.4s">
+                                    <h5 class="p1-clr wow fadeInLeft pb-2 " data-wow-delay="0.4s">
                                         How Much Would You Like To Donate?
                                     </h5>
                                     <!-- Currency Selector Buttons -->
                                     <div class="mb-3">
-                                        <button type="button" class="cu-btn currency-btn" data-currency="$">USD</button>
-                                        <button type="button" class="cu-btn currency-btn" data-currency="€">Euro</button>
-                                        <button type="button" class="cu-btn currency-btn" data-currency="Tsh">Tsh</button>
+                                        <button type="button" class="cu-btn currency-btn" onclick="setCurrency('$')" data-currency="$">USD</button>
+                                        <button type="button" class="cu-btn currency-btn" onclick="setCurrency('€')" data-currency="€">Euro</button>
+                                        <button type="button" class="cu-btn currency-btn" onclick="setCurrency('Tsh')" data-currency="Tsh">Tsh</button>
                                     </div>
                                     <!-- Donation Amount Input with Currency Display -->
                                     <div class="input-group">
                                         <span class="input-group-text" id="currency-symbol">$</span>
-                                        <input type="number" name="amount" placeholder="Amount" class="form-control">
+                                        <input type="number" name="amount" id="donationAmount" placeholder="Amount" required class="form-control">
                                     </div>
                                 </div>
+                                 <!-- Hidden Input to Store Selected Currency -->
+                                <input type="hidden" name="currency" id="currencyInput" value="$">
                                 
                                 <h5 class="p1-clr wow fadeInLeft" data-wow-delay="0.4s">
                                     Personal Info 
@@ -281,29 +285,6 @@
                                     </button>
                                 </div>
                             </form>
-                            
-                            <!-- JavaScript to Change Currency Symbol -->
-                            <script>
-                                // JavaScript to handle currency button clicks and update symbol
-                                const currencyButtons = document.querySelectorAll('.currency-btn');
-                                const currencySymbol = document.getElementById('currency-symbol');
-                            
-                                currencyButtons.forEach(button => {
-                                    button.addEventListener('click', function() {
-                                        // Update currency symbol
-                                        currencySymbol.textContent = this.getAttribute('data-currency');
-                            
-                                        // Update active button state
-                                        currencyButtons.forEach(btn => btn.classList.remove('active'));
-                                        this.classList.add('active');
-                                    });
-                                });
-                            </script>
-                            
-                            <style>
-                                /* Optional: Style the active button */
-                                
-                            </style>
                             
                             
                         </div>
@@ -511,6 +492,8 @@
     <script src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
+    <!--<< donationForm.js >>-->
+    <script src="assets/js/donationForm.js"></script>
 </body>
 
 </html>
