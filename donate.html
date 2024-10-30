@@ -246,53 +246,55 @@
                         <div class="col-lg-12 col-md-12 conatact-box " >
                             <form 
                                 action="https://formspree.io/f/xwpklkgl"
-                                method="POST" class="row g-xl-4 g-3">
+                                method="POST" class="row g-xl-4 g-3" id="donationForm">
+                                <div id="error-message" style="color: red; display: none; margin-bottom: 10px;"></div> <!-- Error message container -->
+
+                                <!-- Currency Selector Buttons -->
                                 <div class="col-lg-12">
-                                    <h5 class="p1-clr wow fadeInLeft pb-2 " data-wow-delay="0.4s">
+                                    <h5 class="p1-clr wow fadeInLeft pb-2" data-wow-delay="0.4s">
                                         How Much Would You Like To Donate?
                                     </h5>
-                                    <!-- Currency Selector Buttons -->
                                     <div class="mb-3">
-                                        <button type="button" class="cu-btn currency-btn" onclick="setCurrency('$')" data-currency="$">USD</button>
-                                        <button type="button" class="cu-btn currency-btn" onclick="setCurrency('€')" data-currency="€">Euro</button>
-                                        <button type="button" class="cu-btn currency-btn" onclick="setCurrency('Tsh')" data-currency="Tsh">Tsh</button>
+                                        <button type="button" class="cu-btn currency-btn"  data-currency="$">USD</button>
+                                        <button type="button" class="cu-btn currency-btn"  data-currency="€">Euro</button>
+                                        <button type="button" class="cu-btn currency-btn"  data-currency="Tsh">Tsh</button>
                                     </div>
-                                    <!-- Donation Amount Input with Currency Display -->
                                     <div class="input-group">
                                         <span class="input-group-text" id="currency-symbol">$</span>
                                         <input type="number" name="amount" id="donationAmount" placeholder="Amount" required class="form-control">
                                     </div>
                                 </div>
-                                 <!-- Hidden Input to Store Selected Currency -->
+
                                 <input type="hidden" name="currency" id="currencyInput" value="$">
-                                
-                                <h5 class="p1-clr wow fadeInLeft" data-wow-delay="0.4s">
-                                    Personal Info 
-                                </h5>
+
+                                <h5 class="p1-clr wow fadeInLeft" data-wow-delay="0.4s">Personal Info</h5>
                                 <div class="col-lg-6">
-                                    <input type="text" name="firstName" placeholder="Your First Name" class="form-control">
+                                    <input type="text" name="firstName" id="firstName" placeholder="Your First Name" class="form-control">
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="text" name="lastName" placeholder="Your Last Name" class="form-control">
+                                    <input type="text" name="lastName" id="lastName" placeholder="Your Last Name" class="form-control">
                                 </div>
                                 <div class="col-lg-12">
-                                    <input type="email" name="email" placeholder="Your Email Address" class="form-control">
+                                    <input type="email" name="email" id="email" placeholder="Your Email Address" class="form-control">
                                 </div>
-                                
+
                                 <div class="col-lg-6">
-                                    <button type="submit" class="cmn-btn text-capitalize">
-                                        Send
-                                    </button>
+                                    <button type="submit" class="cmn-btn text-capitalize">Send</button>
                                 </div>
+                                <!-- Feedback section -->
+                                <div id="loadingSpinner" style="display: none;">Loading...</div>
+                                <div id="successMessage" style="display: none; color: green;">Thank you for your donation!</div>
+                                <div id="errorMessage" style="display: none; color: red;">There was an error. Please try again.</div>
                             </form>
-                            
-                            
                         </div>
                     </div>
                 </div>
                 <!-- Element -->
                 <img src="assets/img/footer/subscribe-shapev2.png" alt="img" class="subscribe-shapev2">
             </div>
+            
+
+
             <div class="row g-4 align-items-center justify-content-start">
                 <div class="col-lg-12 col-md-12">
                     <div class="about-contentv1">

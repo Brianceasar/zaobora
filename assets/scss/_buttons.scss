@@ -187,5 +187,14 @@
 	background-color:$p1-clr;
 	color: white;
 }
+.is-invalid {
+    border-color: red;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+}
+
 
 //>>>>> Component Button End <<<<<//

@@ -293,6 +293,15 @@
   color: white;
 }
 
+.is-invalid {
+  border-color: red;
+}
+
+#error-message {
+  color: red;
+  font-weight: bold;
+}
+
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
