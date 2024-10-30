@@ -197,6 +197,102 @@
   visibility: visible;
 }
 
+.cu-btn {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #000;
+  outline: 2px #000;
+  /* color: var(--white-clr); */
+  font-size: 12px;
+  font-weight: 400;
+  padding: 12px 15px 10px;
+  transition: all 0.4s ease-in-out;
+  letter-spacing: 3px;
+  border-radius: 11px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  line-height: 1;
+  z-index: 9;
+  text-transform: capitalize;
+  background: rgba(42, 185, 57, 0.0196078431);
+}
+.cu-btn i {
+  margin-left: 5px;
+  transition: all 0.4s;
+}
+.cu-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--p1-clr);
+  z-index: -1;
+  transition: all 0.6s;
+  opacity: 0;
+  visibility: hidden;
+}
+.cu-btn.cu-white {
+  background: var(--white-clr);
+  color: var(--p900-clr);
+}
+.cu-btn.cu-white i {
+  color: var(--p900-clr);
+}
+.cu-btn.cu-primary2 {
+  background: var(--p2-clr);
+  color: var(--p900-clr);
+}
+.cu-btn.cu-primary2 i {
+  color: var(--p900-clr);
+}
+.cu-btn.cu-primary2:hover {
+  color: var(--white-clr);
+}
+.cu-btn.cu-primary2:hover::before {
+  background: var(--p1-clr);
+}
+.cu-btn.cu-primary2:hover i {
+  color: var(--white-clr);
+}
+.cu-btn.primary-border {
+  background: transparent;
+  border: 1px solid var(--p1-clr);
+  color: var(--p900-clr);
+}
+.cu-btn.primary-border i {
+  color: var(--p900-clr);
+}
+.cu-btn.primary-border:hover {
+  color: var(--white-clr);
+}
+.cu-btn.primary-border:hover::before {
+  background: var(--p1-clr);
+}
+.cu-btn.primary-border:hover i {
+  color: var(--white-clr) !important;
+}
+.cu-btn:hover {
+  color: var(--p900-clr);
+}
+.cu-btn:hover i {
+  color: var(--p900-clr);
+}
+.cu-btn:hover::before {
+  width: 120%;
+  height: 120%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.currency-btn.active {
+  background-color: var(--p1-clr);
+  color: white;
+}
+
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
@@ -4155,7 +4251,6 @@ iframe {
   display: inline-flex;
   align-items: center;
   line-height: 150%;
-  width: 100%;
   border: none;
 }
 .nice-select:focus, .nice-select:hover {

@@ -243,34 +243,69 @@
             <div class="subscribe-wrapper-v02 pb-5 mb-5">
                 <div class="container">
                     <div class="row g-4 justify-content-between">
-                        
                         <div class="col-lg-12 col-md-12 conatact-box " >
                             <form action="#" class="row g-xl-4 g-3">
                                 <div class="col-lg-12">
-                                    <h5 class="p1-clr wow fadeInLeft" data-wow-delay="0.4s">
-                                        How Mouch Would You Like To Donate ?
+                                    <h5 class="p1-clr wow fadeInLeft pb-2   " data-wow-delay="0.4s">
+                                        How Much Would You Like To Donate?
                                     </h5>
-                                    <input type="text" placeholder="Amount">
+                                    <!-- Currency Selector Buttons -->
+                                    <div class="mb-3">
+                                        <button type="button" class="cu-btn currency-btn" data-currency="$">USD</button>
+                                        <button type="button" class="cu-btn currency-btn" data-currency="€">Euro</button>
+                                        <button type="button" class="cu-btn currency-btn" data-currency="Tsh">Tsh</button>
+                                    </div>
+                                    <!-- Donation Amount Input with Currency Display -->
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="currency-symbol">$</span>
+                                        <input type="number" name="amount" placeholder="Amount" class="form-control">
+                                    </div>
                                 </div>
+                                
                                 <h5 class="p1-clr wow fadeInLeft" data-wow-delay="0.4s">
                                     Personal Info 
                                 </h5>
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Your First Name">
+                                    <input type="text" name="firstName" placeholder="Your First Name" class="form-control">
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Your Last Name">
+                                    <input type="text" name="lastName" placeholder="Your Last Name" class="form-control">
                                 </div>
                                 <div class="col-lg-12">
-                                    <input type="text" placeholder="Your Email Address">
+                                    <input type="email" name="email" placeholder="Your Email Address" class="form-control">
                                 </div>
-                            
+                                
                                 <div class="col-lg-6">
                                     <button type="submit" class="cmn-btn text-capitalize">
                                         Send
                                     </button>
                                 </div>
                             </form>
+                            
+                            <!-- JavaScript to Change Currency Symbol -->
+                            <script>
+                                // JavaScript to handle currency button clicks and update symbol
+                                const currencyButtons = document.querySelectorAll('.currency-btn');
+                                const currencySymbol = document.getElementById('currency-symbol');
+                            
+                                currencyButtons.forEach(button => {
+                                    button.addEventListener('click', function() {
+                                        // Update currency symbol
+                                        currencySymbol.textContent = this.getAttribute('data-currency');
+                            
+                                        // Update active button state
+                                        currencyButtons.forEach(btn => btn.classList.remove('active'));
+                                        this.classList.add('active');
+                                    });
+                                });
+                            </script>
+                            
+                            <style>
+                                /* Optional: Style the active button */
+                                
+                            </style>
+                            
+                            
                         </div>
                     </div>
                 </div>
