@@ -959,7 +959,7 @@ span {
 }
 @media (max-width: 1399px) {
   .about-wrapperv3 .about-contentv1 h2 {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 @media (max-width: 1199px) {
@@ -1791,6 +1791,43 @@ span {
 .recent-project-item:hover .arrow {
   opacity: 1;
   visibility: visible;
+}
+
+.modal {
+  z-index: 1055 !important;
+}
+.modal .modal-dialog-centered .modal-content {
+  background-color: var(--p200-clr);
+  color: var(--p700-clr);
+  border: 2px solid var(--p100-clr);
+}
+.modal .modal-dialog-centered .modal-content .modal-header {
+  background-color: var(--p200-clr);
+  color: var(--p700-clr);
+  border-bottom: none;
+}
+.modal .modal-dialog-centered .modal-content .modal-header .modal-title {
+  font-weight: bold;
+}
+.modal .modal-dialog-centered .modal-content .modal-header .btn-close {
+  color: #fff;
+  opacity: 1;
+}
+.modal .modal-dialog-centered .modal-content .modal-body {
+  font-size: 1.1rem;
+}
+.modal .modal-dialog-centered .modal-content .modal-footer .btn-primary {
+  background-color: var(--p1-clr);
+  border-color: var(--p200-clr);
+  color: #fff;
+}
+.modal .modal-dialog-centered .modal-content .modal-footer .btn-primary:hover {
+  background-color: var(--p2-clr);
+  border-color: var(--p200-clr);
+}
+
+.modal-backdrop {
+  z-index: 1050;
 }
 
 .footer-section {

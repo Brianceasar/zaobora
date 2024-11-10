@@ -798,3 +798,58 @@
 	}
 }
 //Recent Project Section
+
+
+// Modal styling
+.modal {
+    z-index: 1055 !important; // Ensures modal appears above the backdrop
+
+    .modal-dialog-centered {
+        .modal-content {
+            background-color: $p200-clr;
+            color: $p700-clr;
+            border: 2px solid $p100-clr;
+            // border-radius: 25px;
+
+            // Header styling
+            .modal-header {
+                background-color: $p200-clr;
+                color: $p700-clr;
+                border-bottom: none;
+
+                .modal-title {
+                    font-weight: bold;
+                }
+
+                .btn-close {
+                    color: #fff;
+                    opacity: 1;
+                }
+            }
+
+            // Body styling
+            .modal-body {
+                font-size: 1.1rem;
+            }
+
+            // Footer button styling
+            .modal-footer {
+                .btn-primary {
+                    background-color: $p1-clr;
+                    border-color: $p200-clr;
+                    color: #fff;
+
+                    &:hover {
+                        background-color: $p2-clr;
+                        border-color: $p200-clr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Backdrop styling for correct layering
+.modal-backdrop {
+    z-index: 1050;
+}

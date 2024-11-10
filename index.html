@@ -189,7 +189,7 @@
                                 Zaobora
                             </div> -->
                             <h1 class="wow fadeInUp" data-wow-delay="0.4s">
-                                Empowering  <span>Farmers to enhance their</span> livelihoods.
+                                Empowering  <span>Farmers to enhance their</span> livelihoods
                             </h1>
                             <p class="wow fadeInUp" data-wow-delay="0.6s">
                                 Since 2020, we've been building sustainable value chains that uplift rural communities and promote environmental stewardship, 
@@ -231,7 +231,7 @@
                                 Our Services
                             </h5>
                             <h2 class="wow fadeInDown p100-clr" data-wow-delay=".3s">
-                                Boosting productivity and sustainability for farmers.
+                                Boosting productivity and sustainability for farmers
                             </h2>
                         </div>
                     </div>
@@ -245,10 +245,9 @@
                                     <!-- <img src="assets/img/blog/blog1.jpg" alt="img" class="w-100"> -->
                                 </div>
                                 <div class="content">
-                                    <a href="service.html#farmeradvisory" class="title">Empowering Farmers  with Expert Advice</a>
+                                    <a href="service.html#farmeradvisory" class="title">Empowering Farmers with Smart Agriculture Solutions</a>
                                     <p>
-                                        We bring expert agricultural advice directly to farmers through innovative mobile apps. Our tailored extension services help farmers 
-                                        in the Southern Highlands optimize crop yields and adopt best practices for sustainable farming success.
+                                        Our personalized extension services integrate evidence based advice on agroecological techniques and provide access to quality farm inputs to optimize yields and enhance sustainability for Tanzanian small holder farmers
                                     </p>
                                     <a href="service.html#farmeradvisory" class="arrows">Read More <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
@@ -271,7 +270,7 @@
                         </div>
                         <div class="col-lg-5 col-md-7 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
                             <div class="blog-itemsv1">
-                                <div class="thumb w-100" style="background:#390A01;">
+                                <div class="thumb w-100" style="background:#DC9C04;">
                                     <!-- <img src="assets/img/blog/blog3.jpg" alt="img" class="w-100"> -->
                                    
                                 </div>
@@ -376,7 +375,7 @@
                                     We’re leaders in agricultural innovation
                                 </h2>
                                 <p class="wow fadeInUp" data-wow-delay=".4s">
-                                    We are Committed to transforming the lives of farmers in Tanzania’s Southern Highlands. 
+                                    We are Committed to transforming the lives of small holder farmers in Tanzania 
                                     Our mission is to create sustainable and fair value chains that benefit producers, consumers, 
                                     and the environment
                                 </p>
@@ -583,27 +582,34 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-7 conatact-box " >
-                            <form action="https://formspree.io/f/mdkoebpr"
+                            <form id="contactForm" action="https://formspree.io/f/mdkoebpr"
                                 method="POST" class="row g-xl-4 g-3">
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Name">
+                                    <input type="text" name="firstName" id="firstName" placeholder="Name">
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="email" placeholder="E-mail">
+                                    <input type="email" name="email" id="email" placeholder="E-mail"required>
                                 </div>
                                 <div class="col-lg-12">
-                                    <input type="text" placeholder="Subject">
+                                    <input type="text" name="subject" id="subject" placeholder="Subject" >
                                 </div>
                                 <div class="col-lg-12">
-                                    <textarea name="message" placeholder="Message"></textarea>
+                                    <textarea name="message" id="message" placeholder="Message" required></textarea>
                                 </div>
                                 <div class="col-lg-6">
                                     <button type="submit" class="cmn-btn text-capitalize">
                                         Send
                                     </button>
                                 </div>
+                                <!-- Feedback section -->
+                                <div id="loadingSpinner" style="display: none;">Loading...</div>
+                                <div id="successMessage" style="display: none; color: green;">Thank you for your donation!</div>
+                                <div id="errorMessage" style="display: none; color: red;">There was an error. Please try again.</div>
                             </form>
                         </div>
+
+                        
+  
                     </div>
                 </div>
                 <!-- Element -->
@@ -611,8 +617,24 @@
             </div>
         </div>
     </div>
-
 </section>
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Your email has been submitted. Thank you! Our team will get back to you shortly.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
     
     <!--<< Footer Section Start >>-->
     <footer class="footer-section overflow-hidden position-relative footer-style2">
@@ -724,6 +746,8 @@
     <script src="assets/js/viewport.jquery.js"></script>
     <!--<< Bootstrap Js >>-->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS (via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!--<< Nice Select Js >>-->
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <!--<< Waypoints Js >>-->
@@ -742,6 +766,9 @@
     <script src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
+    <!--<< donationForm.js >>-->
+    <script src="assets/js/donationForm.js"></script>
+
 </body>
 
 </html>
