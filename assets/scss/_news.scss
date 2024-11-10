@@ -42,7 +42,7 @@
 		}
 	}
 	.content {
-		border-radius: 5px 0px 5px 5px;
+		border-radius: 5px 5px 110px 5px;
 		background: $white-clr;
 		box-shadow: 0px 10px 30px 0px rgba(42, 185, 57, 0.1);
 		padding: 30px;
@@ -137,7 +137,7 @@
 	@include breakpoint(max-xxl) {
 		.content {
 			padding: 24px;
-			width: 91%;
+			width: 100%;
 			margin: -60px 0 0 auto;
 			.comment-inner {
 				margin-bottom: 12px;

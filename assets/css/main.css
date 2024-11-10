@@ -959,7 +959,7 @@ span {
 }
 @media (max-width: 1399px) {
   .about-wrapperv3 .about-contentv1 h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 @media (max-width: 1199px) {
@@ -1961,14 +1961,6 @@ span {
   .single-footer-widget .widget-head h3 {
     font-size: 26px;
   }
-}
-@media screen and (max-width: 991px) and (max-width: 480px) {
-  .single-footer-widget .widget-head .footer-logo img {
-    height: 70px !important;
-    width: 80px !important;
-  }
-}
-@media (max-width: 991px) {
   .single-footer-widget .footer-content .pre-pragraph {
     margin-bottom: 22px;
   }
@@ -1986,7 +1978,6 @@ span {
     gap: 10px;
   }
 }
-
 .footer-bottom {
   position: relative;
   z-index: 9;
@@ -5601,7 +5592,7 @@ iframe {
   left: 12px;
 }
 .blog-itemsv1 .content {
-  border-radius: 5px 0px 5px 5px;
+  border-radius: 5px 5px 110px 5px;
   background: var(--white-clr);
   box-shadow: 0px 10px 30px 0px rgba(42, 185, 57, 0.1);
   padding: 30px;
@@ -5682,7 +5673,7 @@ iframe {
 @media (max-width: 1399px) {
   .blog-itemsv1 .content {
     padding: 24px;
-    width: 91%;
+    width: 100%;
     margin: -60px 0 0 auto;
   }
   .blog-itemsv1 .content .comment-inner {
@@ -7386,6 +7377,20 @@ input.main-search-input::placeholder {
 @media (max-width: 991px) {
   .section-padding {
     padding: 80px 0;
+  }
+}
+
+.section-padding-service-section {
+  padding: 120px 0 120px 0;
+}
+@media (max-width: 1199px) {
+  .section-padding-service-section {
+    padding: 100px 0 100px 0;
+  }
+}
+@media (max-width: 991px) {
+  .section-padding-service-section {
+    padding: 80px 0 0 0;
   }
 }
 
