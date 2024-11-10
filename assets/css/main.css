@@ -4241,7 +4241,7 @@ iframe {
   }
 }
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 12px;
   height: 4px;
 }
 
