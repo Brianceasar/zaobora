@@ -2,6 +2,9 @@
 const currencyButtons = document.querySelectorAll('.currency-btn');
 const currencySymbol = document.getElementById('currency-symbol');
 const currencyInput = document.getElementById('currencyInput'); // Hidden input to hold selected currency
+const purposeButtons = document.querySelectorAll('.don-btn');
+const purposeInput = document.getElementById('donationPurpose'); // Hidden input to hold selected purpose
+
 
 currencyButtons.forEach(button => {
     button.addEventListener('click', function() {
@@ -16,6 +19,18 @@ currencyButtons.forEach(button => {
         this.classList.add('active');
     });
 });
+
+purposeButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Update the hidden input with the selected purpose
+        purposeInput.value = this.getAttribute('data-purpose');
+        console.log(purposeInput.value)
+        // Update active button state
+        purposeButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
 
 // Function to handle form validation and submission for any form
 function handleFormSubmission(formId) {
@@ -139,3 +154,6 @@ function handleFormSubmission(formId) {
 // Initialize form handling for both the donation and contact forms
 handleFormSubmission("donationForm");
 handleFormSubmission("contactForm");
+
+
+

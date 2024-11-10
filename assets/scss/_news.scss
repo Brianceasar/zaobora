@@ -194,6 +194,9 @@
 				font-size: 25px;
 				line-height: 35px;
 				margin-bottom: 10px;
+				@include breakpoint(mobile-s){
+					font-size: 20px;
+				}
 			}
 			p {
 				color: $p800-clr;

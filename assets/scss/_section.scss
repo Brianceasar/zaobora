@@ -9,10 +9,17 @@
 		margin-bottom: 10px;
 		line-height: 32px;
 		font-weight: 400;
+		@include breakpoint(mobile-s){
+			font-size:16px;
+		}
 	}
 	h2{
 		font-weight: 400;
 		color: $p900-clr;
+		@include breakpoint(mobile-s){
+			font-size:20px;
+			text-align: left;
+		}
 	}
 }
 
@@ -198,3 +205,59 @@
 	}
 }
 // Sidebar Checking
+
+.about-thumv01-d{
+	@include breakpoint(max-sm){
+		height: 570px !important;
+		background: $p900-clr;
+	}
+	@include breakpoint(mobile-s){
+		height: 600px !important;
+	}
+}
+
+// .donate-purpose-content{
+// 	@include breakpoint(max-sm){
+// 		height: 900px;
+// 	}
+// }
+.about-donate{
+	@include breakpoint(max-sm){
+		border: none !important;
+		border-radius: 0 0 0 0 !important;
+		padding: 0 0 20px 0;
+		height: auto;
+		p{
+			padding: 0 15px 0 10px;
+			font-size: 15px;
+		}
+	}
+}
+
+.donate-purpose{
+	display: flex;
+	justify-content: center;
+	
+	&1{
+			
+		&.icon{
+			height: 200px;
+			width: 200px;
+			
+		}
+	}
+	&2{
+		display: flex;
+		justify-content: center;
+	}
+	.donatepurposeicon{
+
+	}
+}
+.donate-text{
+	@include breakpoint(max-sm){
+		p{
+			padding: 0 15px 0 10px;
+		}
+	}
+}

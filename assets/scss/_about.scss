@@ -216,6 +216,9 @@
 		.about-contentv1 {
 			h2 {
 				font-size: 34px;
+				@include breakpoint(mobile-s){
+					font-size: 20px;
+				}
 			}
 		}
 		.about-thumv03 {
