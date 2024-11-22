@@ -604,6 +604,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@include breakpoint(xxl){
+			img{
+				height: 120px;
+			}
+		}
 	}
 	.topheader-mainheader {
 		width: calc(100% - 250px);

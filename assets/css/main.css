@@ -3926,6 +3926,11 @@ iframe {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 1400px) {
+  .header-common-adjustment-landing .logo-v05 img {
+    height: 120px;
+  }
+}
 .header-common-adjustment-landing .topheader-mainheader {
   width: calc(100% - 250px);
 }
