@@ -1,3 +1,7 @@
+@use '../base/variable' as *;
+@use 'sass:map';
+@use '../base/mixin' as *;
+
 @each $bgcolorMap, $value in $bgcolorMap {
   .bg-#{$bgcolorMap} {
     background-color: #{$value} !important;

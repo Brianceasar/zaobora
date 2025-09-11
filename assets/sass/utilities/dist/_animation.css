@@ -1,6 +1,30 @@
-@use '../base/variable' as *;
-@use 'sass:map';
-@use '../base/mixin' as *;
+:root {
+  --theme-color: #196164;
+  --theme-color2: #C4F500;
+  --title-color: #19352D;
+  --body-color: #7A7A7A;
+  --smoke-color: #EBF3EE;
+  --smoke-color2: #F6F6F7;
+  --smoke-color3: #F5F5F6;
+  --smoke-color4: #F4F4F4;
+  --smoke-color5: #F0F2F4;
+  --black-color: #202420;
+  --gray-color: #232323;
+  --white-color: #ffffff;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --border-color: #E1E1E1;
+  --title-font: "Inter", sans-serif;
+  --body-font: "Inter", sans-serif;
+  --icon-font: "Font Awesome 5 Free";
+  --main-container: 1290px;
+  --container-gutters: 24px;
+  --section-space: 120px;
+  --section-space-mobile: 80px;
+  --section-title-space: 70px;
+  --ripple-ani-duration: 5s;
+}
+
 .ripple-animation {
   animation-duration: var(--ripple-ani-duration);
   animation-timing-function: ease-in-out;
@@ -13,20 +37,18 @@
     transform: scale(1);
     opacity: 0;
   }
-
   30% {
     opacity: 1;
   }
-
   100% {
     transform: scale(2.1);
     opacity: 0;
   }
 }
-
 .movingX {
   animation: movingX 8s linear infinite;
 }
+
 @keyframes movingX {
   0% {
     transform: translateX(0);
@@ -38,10 +60,10 @@
     transform: translateX(0);
   }
 }
-
 .moving {
   animation: moving 8s linear infinite;
 }
+
 @keyframes moving {
   0% {
     transform: translateX(0);
@@ -53,19 +75,22 @@
     transform: translateX(0);
   }
 }
-
 .jump {
   animation: jumpAni 7s linear infinite;
 }
+
 .jump1 {
   animation: jumpAni 6s linear infinite;
 }
+
 .jump2 {
   animation: jumpAni 5s linear infinite;
 }
+
 .jump3 {
   animation: jumpAni 4s linear infinite;
 }
+
 @keyframes jumpAni {
   0% {
     transform: translateY(0);
@@ -77,10 +102,10 @@
     transform: translateY(0);
   }
 }
-
 .jump-reverse {
   animation: jumpReverseAni 7s linear infinite;
 }
+
 @keyframes jumpReverseAni {
   0% {
     transform: translateY(0);
@@ -92,13 +117,14 @@
     transform: translateY(0);
   }
 }
-
 .spin {
   animation: spin 15s linear infinite;
 }
+
 .spin-slow {
   animation: spin 50s linear infinite;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0);
@@ -110,6 +136,7 @@
 .spin2 {
   animation: spin2 15s linear infinite;
 }
+
 @keyframes spin2 {
   0% {
     transform: rotate(0);
@@ -118,14 +145,11 @@
     transform: rotate(360deg);
   }
 }
-// This is for Progress bar animation also has a js code
 @keyframes animate-positive {
   0% {
-    width: 0; 
-  } 
+    width: 0;
+  }
 }
-
-
 .scalein.slider-animated {
   --animation-name: scalein;
 }
@@ -153,13 +177,14 @@
 .slideindown.slider-animated {
   --animation-name: slideindown;
 }
+
 .rollinleft.slider-animated {
   --animation-name: rollinleft;
 }
+
 .rollinright.slider-animated {
   --animation-name: rollinright;
 }
-
 
 .scalein,
 .slidetopleft,
@@ -187,81 +212,68 @@
     opacity: 0;
     transform: translateY(70px);
   }
-
   100% {
     transform: translateY(0);
   }
 }
-
 @keyframes slideinright {
   0% {
     opacity: 0;
     transform: translateX(70px);
   }
-
   100% {
     transform: translateX(0);
   }
 }
-
 @keyframes slideindown {
   0% {
     opacity: 0;
     transform: translateY(-70px);
   }
-
   100% {
     transform: translateY(0);
   }
 }
-
 @keyframes slideinleft {
   0% {
     opacity: 0;
     transform: translateX(-70px);
   }
-
   100% {
     transform: translateX(0);
   }
 }
-
 @keyframes slidebottomright {
   0% {
     opacity: 0;
     transform: translateX(100px) translateY(100px);
   }
-
   100% {
     transform: translateX(0) translateY(0);
   }
 }
-
 @keyframes slidetopleft {
   0% {
     opacity: 0;
     transform: translateX(-100px) translateY(-100px);
   }
-
   100% {
     transform: translateX(0) translateY(0);
   }
 }
-
-
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  to { 
-      transform: rotate(360deg);
+  to {
+    transform: rotate(360deg);
   }
   0% {
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-top-color: transparent;
     border-left-color: transparent;
-  }  
+  }
   75% {
     border-top-color: #fff;
     border-left-color: #fff;

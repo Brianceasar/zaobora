@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "../base/variable" as variable;
 
 @mixin background-content($repeat: no-repeat, $size: cover, $position: center center) {
 	background-repeat: $repeat;
@@ -129,7 +130,7 @@
 @mixin hd {
 
 	/* Hight Resoulation devices */
-	@media (min-width: #{$hd + 1}) {
+	@media (min-width: #{variable.$hd + 1}) {
 		@content;
 	}
 }
@@ -137,63 +138,56 @@
 @mixin xxl {
 	
 	/* Extra large devices */
-	@media (max-width: #{$xxl}) {
+	@media (max-width: #{variable.$xxl}) {
 		@content;
 	}
 }
 
 @mixin ml {
-
 	/* Medium Large devices */
-	@media (max-width: #{$ml}) {
+	@media (max-width: #{variable.$ml}) {
 		@content;
 	}
 }
 
 @mixin xl {
-
 	/* Medium Large devices */
-	@media (max-width: #{$xl}) {
+	@media (max-width: #{variable.$xl}) {
 		@content;
 	}
 }
 
 @mixin lg {
-
 	/* Large devices */
-	@media (max-width: #{$lg}) {
+	@media (max-width: #{variable.$lg}) {
 		@content;
 	}
 }
 
 @mixin md {
-
 	/* Medium devices */
-	@media (max-width: #{$md}) {
+	@media (max-width: #{variable.$md}) {
 		@content;
 	}
 }
 
 @mixin sm {
-
 	/* Small devices */
-	@media (max-width: #{$sm}) {
+	@media (max-width: #{variable.$sm}) {
 		@content;
 	}
 }
 
 @mixin xs {
-
 	/* Extra small devices */
-	@media (max-width: #{$xs}) {
+	@media (max-width: #{variable.$xs}) {
 		@content;
 	}
 }
 
 @mixin vxs {
-
 	/* Extra small devices */
-	@media (max-width: #{$vxs}) {
+	@media (max-width: #{variable.$vxs}) {
 		@content;
 	}
 }

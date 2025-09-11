@@ -1,3 +1,5 @@
+@use '../base/variable' as *;
+@use '../base/mixin' as *;
 .mobile-menu-wrapper {
   position: fixed;
   top: 0;

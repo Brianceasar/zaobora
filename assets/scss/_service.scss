@@ -320,8 +320,8 @@
 	
 }
 .service-cards {
-    max-height: 80vh;              /* Sets height for visible cards */
-    overflow-y: scroll;            /* Allows scrolling within the container */
+    max-height: 100vh;              /* Sets height for visible cards */
+    // overflow-y: scroll;            /* Allows scrolling within the container */
 	-ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;     /* Firefox */
     border-radius: 8px;

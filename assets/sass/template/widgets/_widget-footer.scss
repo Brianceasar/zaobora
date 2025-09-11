@@ -1,3 +1,5 @@
+@use '../../base/variable' as *;
+@use '../../base/mixin' as *;
 .footer-widget {
     margin-bottom: 50px !important;
 

@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 :root {
   --theme-color         : #196164;  
   --theme-color2        : #C4F500;  
@@ -10,9 +12,7 @@
   --smoke-color5        : #F0F2F4; 
   --black-color         : #202420;
   --gray-color          : #232323;
-  --white-color         : #ffffff; 
-  --light-color         : #9fa2ad;
-  --yellow-color        : #FFB539;
+  --white-color         : #ffffff;
   --success-color       : #28a745;
   --error-color         : #dc3545;
   --border-color        : #E1E1E1;
@@ -83,50 +83,59 @@ $space-mobile-extra: calc(var(--section-space-mobile) - 30px);
 
 // BG Color Mapping 
 $bgcolorMap  : ();
-$bgcolorMap  : map-merge((
-  "theme"    : $theme-color,
-  "theme2"    : $theme-color2,
-  "smoke"    : $smoke-color,
-  "smoke2"   : $smoke-color2,
-  "smoke3"   : $smoke-color3,
-  "smoke4"   : $smoke-color4,
-  "smoke5"   : $smoke-color5,
-  "white"    : $white-color,
-  "black"    : $black-color,
-  "title"    : $title-color, 
-), $bgcolorMap);
-
+$bgcolorMap  : map.merge(
+  $bgcolorMap,
+  (
+    "theme"    : $theme-color,
+    "theme2"    : $theme-color2,
+    "smoke"    : $smoke-color,
+    "smoke2"   : $smoke-color2,
+    "smoke3"   : $smoke-color3,
+    "smoke4"   : $smoke-color4,
+    "smoke5"   : $smoke-color5,
+    "white"    : $white-color,
+    "black"    : $black-color,
+    "title"    : $title-color
+  )
+);
 
 // Overlay Color Mapping 
 $overlaycolorMap : ();
-$overlaycolorMap : map-merge((
-  "theme"        : $theme-color,  
-  "title"        : $title-color,
-  "white"        : $white-color,
-  "black"        : $black-color,
-  "overlay1"     : #131B23,
-), $overlaycolorMap);
-
+$overlaycolorMap : map.merge(
+  $overlaycolorMap,
+  (
+    "theme"        : $theme-color,  
+    "title"        : $title-color,
+    "white"        : $white-color,
+    "black"        : $black-color,
+    "overlay1"     : #131B23
+  )
+);
 
 // Text Color Mapping 
 $textColorsMap : ();
-$textColorsMap : map-merge((
-  "theme"      : $theme-color,
-  "theme2"     : $theme-color2,
-  "title"      : $title-color,
-  "body"       : $body-color,
-  "white"      : $white-color,
-  "light"      : $light-color,
-  "yellow"     : $yellow-color,
-  "success"    : $success-color,
-  "error"      : $error-color), 
-$textColorsMap);
-
+$textColorsMap : map.merge(
+  $textColorsMap,
+  (
+    "theme"      : $theme-color,
+    "theme2"     : $theme-color2,
+    "title"      : $title-color,
+    "body"       : $body-color,
+    "white"      : $white-color,
+    "light"      : $light-color,
+    "yellow"     : $yellow-color,
+    "success"    : $success-color,
+    "error"      : $error-color
+  )
+);
 
 // Font Mapping 
 $fontsMap    : ();
-$fontsMap    : map-merge((
-  "icon"     : $icon-font,
-  "title"    : $title-font,
-  "body"     : $body-font,
-), $fontsMap); 
+$fontsMap    : map.merge(
+  $fontsMap,
+  (
+    "icon"     : $icon-font,
+    "title"    : $title-font,
+    "body"     : $body-font
+  )
+);

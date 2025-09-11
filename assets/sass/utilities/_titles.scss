@@ -1,3 +1,5 @@
+@use '../base/variable' as *;
+@use '../base/mixin' as *;
 .sec-title {
     margin-bottom: calc(var(--section-title-space) - 43px);
     margin-top: -0.04em;

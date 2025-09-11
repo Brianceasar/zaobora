@@ -1,3 +1,6 @@
+@use '../base/variable' as *;
+@use 'sass:map';
+@use '../base/mixin' as *;
 @each $textColorsMap, $value in $textColorsMap {
   .text-#{$textColorsMap} {
     color: #{$value} !important;

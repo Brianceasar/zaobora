@@ -1,3 +1,6 @@
+@use '../base/variable' as *;
+@use 'sass:map';
+@use '../base/mixin' as *;
 @each $fontsMap, $value in $fontsMap {
   .font-#{$fontsMap} {
     font-family: #{$value};

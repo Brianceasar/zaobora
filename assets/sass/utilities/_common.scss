@@ -1,3 +1,6 @@
+@use '../base/variable' as *;
+@use 'sass:map';
+@use '../base/mixin' as *;
 .shape-mockup-wrap {
     z-index: 2;
     position: relative;

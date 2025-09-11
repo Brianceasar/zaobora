@@ -1,60 +1,53 @@
-
-
-/*CSS Table Of Content Ends Here*/
-
 //>> Basic Start <<//
 
 //>> Mixins <<//
-@import "_mixins";
+@use "_mixins" as *;
 //>> Variables <<//
-@import "_variables";
+@use "_variables" as *;
 //>> ColorPlate <<//
-@import "_colorplate";
+@use "_colorplate" as *;
 //>> Buttons <<//
-@import "_buttons";
+@use "_buttons" as *;
 //>> Typography <<//
-@import "_typography";
+@use "_typography" as *;
 //>> Basic End <<//
 
-//>> Template Section Style Start <<//
 
 //>> About <<//
-@import "_about";
+@use "_about" as *;
 //>> Global <<//
-@import "_global";
+@use "_global" as *;
 //>> Footer <<//
-@import "_footer";
+@use "_footer" as *;
 //>> Animation <<//
-@import "_animation";
+@use "_animation" as *;
 //>> Brand <<//
-@import "_brand";
+@use "_brand" as *;
 //>> Contact <<//
-@import "_contact";
+@use "_contact" as *;
 //>> Faq <<//
-@import "_faq";
+@use "_faq" as *;
 //>> Header <<//
-@import "_header";
+@use "_header" as *;
 //>> Helping <<//
-@import "_helping";
+@use "_helping" as *;
 //>> Hero <<//
-@import "_hero";
+@use "_hero" as *;
 //>> Marquee <<//
-@import "_marquee";
+@use "_marquee" as *;
 //>> MeanMenu <<//
-@import "_meanmenu";
+@use "_meanmenu" as *;
 //>> News <<//
-@import "_news";
+@use "_news" as *;
 //>> Preloader <<//
-@import "_preloader";
+@use "_preloader" as *;
 //>> Pricing <<//
-@import "_pricing";
+@use "_pricing" as *;
 //>> Section <<//
-@import "_section";
+@use "_section" as *;
 //>> Service <<//
-@import "_Service";
+@use "_Service" as *;
 //>> Team <<//
-@import "_team";
+@use "_team" as *;
 //>> Testimonial <<//
-@import "_testimonial";
-
-//>> Template Section Style End <<//
+@use "_testimonial" as *;

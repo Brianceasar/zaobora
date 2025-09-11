@@ -1,3 +1,6 @@
+@use '../base/variable' as *;
+@use '../base/mixin' as *;
+
 .slick-track>[class*=col] {
   flex-shrink: 0;
   width: 100%;

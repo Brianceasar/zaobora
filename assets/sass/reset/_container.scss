@@ -1,3 +1,5 @@
+@use '../base/mixin' as *;
+
 @include ml {
     :root {
         --main-container: 1250px;

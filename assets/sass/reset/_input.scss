@@ -1,3 +1,6 @@
+@use '../base/variable' as *;
+@use '../base/mixin' as *;
+
 select,
 .single-select,
 .form-control,
@@ -204,10 +207,6 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-/* Firefox */
-input[type="number"] {
-    -moz-appearance: textfield;
-}
 
 input[type="checkbox"] {
     visibility: hidden;
