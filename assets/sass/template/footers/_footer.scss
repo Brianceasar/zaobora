@@ -1,4 +1,8 @@
 /*Footer 1***************/
+@use '../../base/variable' as *;
+@use 'sass:map';
+@use '../../base/mixin' as *;
+
 .footer-wrapper {
     background-color: $title-color;
 }

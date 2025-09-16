@@ -1,3 +1,7 @@
+@use '../../base/variable' as *;
+@use 'sass:map';
+@use '../../base/mixin' as *;
+
 /* Counter 1 ---------------------------------- */
 .counter-box {
     background-color: $white-color;

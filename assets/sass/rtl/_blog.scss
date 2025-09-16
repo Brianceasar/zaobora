@@ -1,3 +1,8 @@
+
+@use '../base/variable' as *;
+@use 'sass:map';
+@use '../base/mixin' as *;
+
 .blog-shape-img1 {
     right: 66px;
     left: auto;

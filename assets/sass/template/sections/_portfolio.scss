@@ -1,3 +1,7 @@
+@use '../../base/variable' as *;
+@use 'sass:map';
+@use '../../base/mixin' as *;
+
 /* Portfolio 1 ---------------------------------- */
 .portfolio-shape-img {
     opacity: 0.2;

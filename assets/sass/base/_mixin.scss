@@ -198,3 +198,12 @@
 		@content;
 	}
 }
+
+@mixin breakpoint($point) {
+  @if $point == mobile-s {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  // Add more breakpoints as needed
+}

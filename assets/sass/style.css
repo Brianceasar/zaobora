@@ -70,16 +70,6 @@
 /*=================================
     CSS Index End
 ==================================*/
-/*=================================
-   01. Theme Base
-==================================*/
-html {
-  scroll-behavior: smooth;
-}
-
-/*------------------- 1.1. Mixin -------------------*/
-/*------------------- 1.2. Function -------------------*/
-/*------------------- 1.3. Variable-------------------*/
 :root {
   --theme-color: #196164;
   --theme-color2: #C4F500;
@@ -93,8 +83,6 @@ html {
   --black-color: #202420;
   --gray-color: #232323;
   --white-color: #ffffff;
-  --light-color: #9fa2ad;
-  --yellow-color: #FFB539;
   --success-color: #28a745;
   --error-color: #dc3545;
   --border-color: #E1E1E1;
@@ -109,7 +97,78 @@ html {
   --ripple-ani-duration: 5s;
 }
 
-/*------------------- 1.5. Typography -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 html,
 body {
   scroll-behavior: smooth !important;
@@ -412,9 +471,77 @@ h6 {
   }
 }
 /*=================================
-    02. Reset
+    CSS Index Here
 ==================================*/
-/*------------------- 2.1. Container -------------------*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Medium Large devices */
 @media (max-width: 1399px) {
   :root {
@@ -494,7 +621,78 @@ h6 {
   margin: 0 auto;
 }
 
-/*------------------- 2.2. Grid -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .slick-track > [class*=col] {
   flex-shrink: 0;
   width: 100%;
@@ -562,7 +760,78 @@ h6 {
     --bs-gutter-y: 40px;
   }
 }
-/*------------------- 2.3. Input -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 select,
 .single-select,
 .form-control,
@@ -847,11 +1116,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
 input[type=checkbox] {
   visibility: hidden;
   opacity: 0;
@@ -1003,7 +1267,78 @@ textarea.is-invalid {
   color: inherit;
 }
 
-/*------------------- 2.4. Slick Slider -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .slick-track > [class*=col] {
   flex-shrink: 0;
   width: 100%;
@@ -1194,7 +1529,78 @@ textarea.is-invalid {
     margin-right: 0;
   }
 }
-/*------------------- 2.5. Mobile Menu -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .mobile-menu-wrapper {
   position: fixed;
   top: 0;
@@ -1344,9 +1750,77 @@ textarea.is-invalid {
   }
 }
 /*=================================
-    03. Utilities
+    CSS Index Here
 ==================================*/
-/*------------------- 3.1. Preloader -------------------*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .preloader {
   position: fixed;
   left: 0;
@@ -1422,7 +1896,78 @@ textarea.is-invalid {
     transform: rotate(360deg);
   }
 }
-/*------------------- 3.2. Buttons -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .global-btn {
   position: relative;
   z-index: 2;
@@ -1842,7 +2387,78 @@ textarea.is-invalid {
     padding: 24px 25px 20px;
   }
 }
-/*------------------- 3.3. Titles -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .sec-title {
   margin-bottom: calc(var(--section-title-space) - 43px);
   margin-top: -0.04em;
@@ -2027,7 +2643,78 @@ h3.sec-title {
     font-size: 30px;
   }
 }
-/*------------------- 3.4. Common -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .shape-mockup-wrap {
   z-index: 2;
   position: relative;
@@ -2319,7 +3006,78 @@ h3.sec-title {
   }
 }
 
-/*------------------- 3.6. Font -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .font-icon {
   font-family: var(--icon-font);
 }
@@ -2372,7 +3130,78 @@ h3.sec-title {
   text-decoration: underline;
 }
 
-/*------------------- 3.7. Background -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .bg-theme {
   background-color: var(--theme-color) !important;
 }
@@ -2440,7 +3269,78 @@ h3.sec-title {
   background-repeat: repeat;
 }
 
-/*------------------- 3.8. Text Color -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .text-theme {
   color: var(--theme-color) !important;
 }
@@ -2489,7 +3389,78 @@ a.text-theme:hover,
   text-decoration: underline;
 }
 
-/*------------------- 3.9. Overlay -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .overlay {
   position: absolute;
   top: 0;
@@ -2584,8 +3555,79 @@ a.text-theme:hover,
   opacity: 1;
 }
 
-/*------------------- 3.10. Animation -------------------*/
-.ripple-animation, .play-btn:after, .play-btn:before {
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.ripple-animation {
   animation-duration: var(--ripple-ani-duration);
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -2848,9 +3890,77 @@ a.text-theme:hover,
   }
 }
 /*=================================
-    04. Template Style
+    CSS Index Here
 ==================================*/
-/*------------------- 4.1. Widget  -------------------*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .widget_nav_menu ul,
 .widget_meta ul,
 .widget_pages ul,
@@ -3087,6 +4197,78 @@ a.text-theme:hover,
   margin: 5px 0;
 }
 
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .widget {
   margin-bottom: 40px;
   position: relative;
@@ -4066,6 +5248,78 @@ ul.wp-block-latest-posts li:last-child {
   padding: 24px 20px;
 }
 
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .footer-widget {
   margin-bottom: 50px !important;
 }
@@ -4355,7 +5609,78 @@ ul.wp-block-latest-posts li:last-child {
     max-width: 410px;
   }
 }
-/*------------------- 4.2. Header  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .nav-header {
   position: relative;
   z-index: 41;
@@ -5198,7 +6523,78 @@ ul.wp-block-latest-posts li:last-child {
   background: var(--title-color);
 }
 
-/*------------------- 4.3. Footer  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /*Footer 1***************/
 .footer-wrapper {
   background-color: var(--title-color);
@@ -5537,7 +6933,78 @@ ul.wp-block-latest-posts li:last-child {
   color: var(--body-color);
 }
 
-/*------------------- 4.4. Breadcumb  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .breadcumb-menu {
   max-width: 100%;
   padding: 0;
@@ -5641,7 +7108,78 @@ ul.wp-block-latest-posts li:last-child {
     font-size: 14px;
   }
 }
-/*------------------- 4.5. Pagination  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .pagination {
   margin-bottom: 30px;
   margin-top: 80px;
@@ -5729,7 +7267,78 @@ ul.wp-block-latest-posts li:last-child {
   margin-top: 30px;
 }
 
-/*------------------- 4.6. Blog  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 blockquote,
 .wp-block-quote {
   font-size: 18px;
@@ -6437,7 +8046,78 @@ blockquote.has-text-align-right:before,
   border-radius: 5px;
 }
 
-/*------------------- 4.7. Comments  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .comment-form {
   margin-top: var(--blog-space-y, 20px);
   position: relative;
@@ -6969,7 +8649,78 @@ li.trackback {
   margin-bottom: 20px;
 }
 
-/*------------------- 4.8. Hero Area  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Hero Global ---------------------------------- */
 .hero-wrapper {
   position: relative;
@@ -7694,7 +9445,78 @@ li.trackback {
   }
 }
 
-/*------------------- 4.9. Error  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .error-area .error-thumb {
   margin-bottom: 55px;
 }
@@ -7710,7 +9532,78 @@ li.trackback {
   margin-bottom: 45px;
 }
 
-/*------------------- 4.00. Popup Search  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .popup-search-box {
   position: fixed;
   top: 0;
@@ -7827,7 +9720,78 @@ li.trackback {
     height: 60px;
   }
 }
-/*------------------- 4.00. Popup Side Menu  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .sidemenu-wrapper {
   position: fixed;
   z-index: 99999;
@@ -7906,7 +9870,78 @@ li.trackback {
     padding: 80px 20px;
   }
 }
-/*------------------- 4.00. Subscribe  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .subscribe-sec-shape {
   position: relative;
   z-index: -1;
@@ -7993,7 +10028,78 @@ li.trackback {
     box-shadow: none;
   }
 }
-/*------------------- 4.00. Contact  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /****contact page*****/
 .contact-page-wrap {
   border-radius: 20px;
@@ -8080,7 +10186,78 @@ li.trackback {
   }
 }
 
-/*------------------- 4.00. About  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /*----------------------------------------------
     # About Area 1
 ----------------------------------------------*/
@@ -8716,7 +10893,78 @@ li.trackback {
   margin-bottom: 0;
 }
 
-/*------------------- 4.00. Team  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Team global ---------------------------------- */
 .team-area-1 {
   margin: 0 90px;
@@ -9375,7 +11623,78 @@ li.trackback {
     margin-bottom: 0;
   }
 }
-/*------------------- 4.00. Testimonial  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Testimonial 1 ---------------------------------- */
 .testimonial-thumb1 img {
   border-radius: 20px;
@@ -9812,7 +12131,78 @@ li.trackback {
   }
 }
 
-/*------------------- 4.00. Counter  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Counter 1 ---------------------------------- */
 .counter-box {
   background-color: var(--white-color);
@@ -10157,7 +12547,78 @@ li.trackback {
   text-transform: capitalize;
 }
 
-/*------------------- 4.00. Blog  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Blog Card ---------------------------------- */
 .blog-shape-img1 {
   opacity: 0.2;
@@ -10505,7 +12966,78 @@ li.trackback {
   }
 }
 
-/*------------------- 4.00. Client  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Client 2 ---------------------------------- */
 .client-area-2 {
   padding-top: 70px;
@@ -10575,7 +13107,78 @@ li.trackback {
   }
 }
 
-/*------------------- 4.00. Simple Sections  -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .checklist ul {
   padding: 0;
   list-style: none;
@@ -10794,7 +13397,78 @@ li.trackback {
     margin-right: 10px;
   }
 }
-/*------------------- 4.00. Video -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Video 1 ---------------------------------- */
 .video-area-1 .video-wrap {
   display: block;
@@ -10816,7 +13490,78 @@ li.trackback {
   top: 50%;
 }
 
-/*------------------- 4.00. Category Menu -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Category 1 ---------------------------------- */
 .category-card {
   border-radius: 6px;
@@ -10989,7 +13734,78 @@ li.trackback {
   opacity: 0.6;
 }
 
-/*------------------- 4.00. Faq -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Faq 1 ---------------------------------- */
 .faq-area-1 {
   margin-top: -400px;
@@ -11320,7 +14136,78 @@ li.trackback {
   background: #202022;
 }
 
-/*------------------- 4.00. feature -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /***********feature area**********/
 .feature-wrapper {
   display: flex;
@@ -11476,7 +14363,78 @@ li.trackback {
   font-size: 18px;
 }
 
-/*------------------- 4.00. CTA -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* CTA Area 1 ---------------------------------- */
 .cta-wrap1 {
   position: relative;
@@ -11741,7 +14699,78 @@ li.trackback {
   }
 }
 
-/*------------------- 4.00. Service -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .service-area-2 {
   margin: 0 70px;
   /* Extra large devices */
@@ -12181,7 +15210,78 @@ li.trackback {
   }
 }
 
-/*------------------- 4.00. Why Choose Us -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /*----------------------------------------------
     # why choose us area style here
 ----------------------------------------------*/
@@ -12585,7 +15685,78 @@ li.trackback {
   }
 }
 
-/*------------------- 4.00. Pricing -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Pricing Card ---------------------------------- */
 .pricing-shape-img1 {
   opacity: 0.2;
@@ -12789,7 +15960,78 @@ li.trackback {
   }
 }
 
-/*------------------- 4.00. Portfolio -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Portfolio 1 ---------------------------------- */
 .portfolio-shape-img {
   opacity: 0.2;
@@ -13179,7 +16421,78 @@ li.trackback {
   }
 }
 
-/*------------------- 4.00. Marquee -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Marquee 1---------------------------------- */
 .marquee-area {
   padding: 25px 0;
@@ -13227,7 +16540,78 @@ li.trackback {
   filter: brightness(9) grayscale(9);
 }
 
-/*------------------- 4.00. Appointment -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /*----------------------------------------------
     # Appointment Area 1
 ----------------------------------------------*/
@@ -13307,7 +16691,78 @@ li.trackback {
     margin-bottom: 15px;
   }
 }
-/*------------------- 4.00. Process -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /* Process Area 1 ---------------------------------- */
 .process-card {
   background-color: var(--white-color);
@@ -13421,7 +16876,78 @@ li.trackback {
   display: block;
 }
 
-/*------------------- 4.00. Product -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .product-area-1 {
   padding-bottom: 295px;
   /* Medium devices */
@@ -14688,7 +18214,78 @@ li.trackback {
   }
 }
 
-/*------------------- 4.00. Cart -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .woocommerce-cart-form {
   text-align: center;
 }
@@ -14931,7 +18528,78 @@ li.trackback {
   border-color: var(--theme-color);
 }
 
-/*------------------- 4.00. Wishlist -------------------*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .tinv-wishlist input[type=checkbox] {
   display: inline-block;
   opacity: 1;
@@ -15167,7 +18835,76 @@ li.trackback {
   }
 }
 /*=================================
-    05. Spacing
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
 ==================================*/
 /*-- Padding Left And Right --*/
 .px-5 {
@@ -15455,6 +19192,78 @@ li.trackback {
   padding-top: 95px;
 }
 
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 /*-- margin Left And Right --*/
 .mx-5 {
   margin-right: 5px;
@@ -15777,6 +19586,78 @@ li.trackback {
   margin-bottom: 135px;
 }
 
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
 .space,
 .space-top {
   padding-top: var(--section-space);
@@ -15843,217 +19724,549 @@ li.trackback {
     padding-top: 65px;
   }
 }
-/*=================================
-    RTL
-==================================*/
 /*------------------- Global -------------------*/
-/* rtl Support */
-[dir=rtl] {
-  /*-- margin Right --*/
-  /*-- Padding Left --*/
-  /*-- Padding Right --*/
-  /* Header 1 ---------------------------------- */
-}
-[dir=rtl] .ml-5 {
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.ml-5 {
   margin-right: 5px;
   margin-left: 0;
 }
-[dir=rtl] .ml-10 {
+
+.ml-10 {
   margin-right: 10px;
   margin-left: 0;
 }
-[dir=rtl] .ml-15 {
+
+.ml-15 {
   margin-right: 15px;
   margin-left: 0;
 }
-[dir=rtl] .ml-20 {
+
+.ml-20 {
   margin-right: 20px;
   margin-left: 0;
 }
-[dir=rtl] .ml-25 {
+
+.ml-25 {
   margin-right: 25px;
   margin-left: 0;
 }
-[dir=rtl] .ml-30 {
+
+.ml-30 {
   margin-right: 30px;
   margin-left: 0;
 }
-[dir=rtl] .ml-35 {
+
+.ml-35 {
   margin-right: 35px;
   margin-left: 0;
 }
-[dir=rtl] .ml-40 {
+
+.ml-40 {
   margin-right: 40px;
   margin-left: 0;
 }
-[dir=rtl] .ml-45 {
+
+.ml-45 {
   margin-right: 45px;
   margin-left: 0;
 }
-[dir=rtl] .ml-50 {
+
+.ml-50 {
   margin-right: 50px;
   margin-left: 0;
 }
-[dir=rtl] .mr-5 {
+
+/*-- margin Right --*/
+.mr-5 {
   margin-left: 5px;
   margin-right: 0;
 }
-[dir=rtl] .mr-10 {
+
+.mr-10 {
   margin-left: 10px;
   margin-right: 0;
 }
-[dir=rtl] .mr-15 {
+
+.mr-15 {
   margin-left: 15px;
   margin-right: 0;
 }
-[dir=rtl] .mr-20 {
+
+.mr-20 {
   margin-left: 20px;
   margin-right: 0;
 }
-[dir=rtl] .mr-25 {
+
+.mr-25 {
   margin-left: 25px;
   margin-right: 0;
 }
-[dir=rtl] .mr-30 {
+
+.mr-30 {
   margin-left: 30px;
   margin-right: 0;
 }
-[dir=rtl] .mr-35 {
+
+.mr-35 {
   margin-left: 35px;
   margin-right: 0;
 }
-[dir=rtl] .mr-40 {
+
+.mr-40 {
   margin-left: 40px;
   margin-right: 0;
 }
-[dir=rtl] .mr-45 {
+
+.mr-45 {
   margin-left: 45px;
   margin-right: 0;
 }
-[dir=rtl] .mr-50 {
+
+.mr-50 {
   margin-left: 50px;
   margin-right: 0;
 }
-[dir=rtl] .pl-5 {
+
+/*-- Padding Left --*/
+.pl-5 {
   padding-left: 0;
   padding-right: 5px;
 }
-[dir=rtl] .pl-10 {
+
+.pl-10 {
   padding-left: 0;
   padding-right: 10px;
 }
-[dir=rtl] .pl-15 {
+
+.pl-15 {
   padding-left: 0;
   padding-right: 15px;
 }
-[dir=rtl] .pl-20 {
+
+.pl-20 {
   padding-left: 0;
   padding-right: 20px;
 }
-[dir=rtl] .pl-25 {
+
+.pl-25 {
   padding-left: 0;
   padding-right: 25px;
 }
-[dir=rtl] .pl-30 {
+
+.pl-30 {
   padding-left: 0;
   padding-right: 30px;
 }
-[dir=rtl] .pl-35 {
+
+.pl-35 {
   padding-left: 0;
   padding-right: 35px;
 }
-[dir=rtl] .pl-40 {
+
+.pl-40 {
   padding-left: 0;
   padding-right: 40px;
 }
-[dir=rtl] .pl-45 {
+
+.pl-45 {
   padding-left: 0;
   padding-right: 45px;
 }
-[dir=rtl] .pl-50 {
+
+.pl-50 {
   padding-left: 0;
   padding-right: 50px;
 }
-[dir=rtl] .pr-5 {
+
+/*-- Padding Right --*/
+.pr-5 {
   padding-right: 0;
   padding-left: 5px;
 }
-[dir=rtl] .pr-10 {
+
+.pr-10 {
   padding-right: 0;
   padding-left: 10px;
 }
-[dir=rtl] .pr-15 {
+
+.pr-15 {
   padding-right: 0;
   padding-left: 15px;
 }
-[dir=rtl] .pr-20 {
+
+.pr-20 {
   padding-right: 0;
   padding-left: 20px;
 }
-[dir=rtl] .pr-25 {
+
+.pr-25 {
   padding-right: 0;
   padding-left: 25px;
 }
-[dir=rtl] .pr-30 {
+
+.pr-30 {
   padding-right: 0;
   padding-left: 30px;
 }
-[dir=rtl] .pr-35 {
+
+.pr-35 {
   padding-right: 0;
   padding-left: 35px;
 }
-[dir=rtl] .pr-40 {
+
+.pr-40 {
   padding-right: 0;
   padding-left: 40px;
 }
-[dir=rtl] .pr-45 {
+
+.pr-45 {
   padding-right: 0;
   padding-left: 45px;
 }
-[dir=rtl] .pr-50 {
+
+.pr-50 {
   padding-right: 0;
   padding-left: 50px;
 }
-[dir=rtl] .sub-title:after, [dir=rtl] .sub-title:before {
+
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.sub-title:after, .sub-title:before {
   margin-left: 12px;
   margin-right: 0;
 }
-[dir=rtl] .sub-title:after {
+
+.sub-title:after {
   margin-left: 0;
   margin-right: 12px;
 }
-[dir=rtl] .slick-dots li {
+
+.slick-dots li {
   margin-left: 18px;
   margin-right: 0;
 }
-[dir=rtl] .slick-dots li:last-child {
+
+.slick-dots li:last-child {
   margin-left: 0;
 }
-[dir=rtl] .global-btn img {
+
+.global-btn img {
   margin-right: 10px;
   margin-left: 0;
   transform: rotateY(180deg);
 }
-[dir=rtl] .header-links li:not(:last-child) {
+
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.header-links li:not(:last-child) {
   margin: 0 0 0 35px;
 }
-[dir=rtl] .header-links li > i {
+
+.header-links li > i {
   margin-left: 10px;
   margin-right: 0;
 }
-[dir=rtl] .main-menu > ul > li:first-child {
+
+.main-menu > ul > li:first-child {
   margin-right: 0 !important;
   margin-left: 11px !important;
 }
-[dir=rtl] .main-menu > ul > li:last-child {
+
+.main-menu > ul > li:last-child {
   margin-right: 11px !important;
   margin-left: 0 !important;
 }
-[dir=rtl] .main-menu ul li.menu-item-has-children > a:after {
+
+.main-menu ul li.menu-item-has-children > a:after {
   margin-left: 0px;
   margin-right: 5px;
 }
-[dir=rtl] .header-layout1 .header-wrapper .simple-icon:not(:last-child) {
+
+/* Header 1 ---------------------------------- */
+.header-layout1 .header-wrapper .simple-icon:not(:last-child) {
   border-left: 1px solid rgba(25, 53, 45, 0.4);
   padding-left: 25px;
   margin-left: 0px;
@@ -16061,150 +20274,473 @@ li.trackback {
   padding-right: 0;
   margin-right: 0;
 }
-[dir=rtl] .footer-layout2 .social-btn.style3 a {
+
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.footer-layout2 .social-btn.style3 a {
   margin-left: 15px;
   margin-right: 0;
 }
-[dir=rtl] .footer-layout2 .widget-contact2 {
+
+.footer-layout2 .widget-contact2 {
   margin-left: 20px;
   margin-right: 0;
 }
-[dir=rtl] .footer-layout2 .copyright-wrap .footer-links a:not(:last-child) {
+
+.footer-layout2 .copyright-wrap .footer-links a:not(:last-child) {
   border-left: 0;
   padding-left: 0;
 }
-[dir=rtl] .checklist.style-white li i, [dir=rtl] .checklist.style-white li svg {
+
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.checklist.style-white li i, .checklist.style-white li svg {
   margin-left: 20px;
   margin-right: 0;
 }
-[dir=rtl] .checklist li i, [dir=rtl] .checklist li svg {
+
+.checklist li i, .checklist li svg {
   margin-left: 20px;
   margin-right: 0;
 }
-[dir=rtl] .checklist.style2 ul li i {
+
+.checklist.style2 ul li i {
   margin-left: 15px;
   margin-right: 0;
 }
-[dir=rtl] .mobile-menu-wrapper .mobile-menu-area {
+
+.mobile-menu-wrapper .mobile-menu-area {
   right: -110%;
   left: auto;
 }
-[dir=rtl] .mobile-menu-wrapper.body-visible .mobile-menu-area {
+
+.mobile-menu-wrapper.body-visible .mobile-menu-area {
   right: 0;
 }
-[dir=rtl] .mobile-menu-wrapper .mobile-logo {
+
+.mobile-menu-wrapper .mobile-logo {
   padding: 0 30px 0 0;
 }
-[dir=rtl] .mobile-menu-wrapper .menu-toggle {
+
+.mobile-menu-wrapper .menu-toggle {
   border-right: 1px solid var(--theme-color);
 }
-[dir=rtl] .mobile-menu {
+
+.mobile-menu {
   text-align: right;
 }
-[dir=rtl] .mobile-menu ul .submenu-item-has-children > a .mean-expand-class:before {
+
+.mobile-menu ul .submenu-item-has-children > a .mean-expand-class:before {
   content: "\f104";
 }
-[dir=rtl] .blog-shape-img1 {
+
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.blog-shape-img1 {
   right: 66px;
   left: auto;
   /* Extra large devices */
 }
-[dir=rtl] .blog-shape-img1 .about1-shape-img-2 {
+.blog-shape-img1 .about1-shape-img-2 {
   margin-right: -35px;
   margin-left: 0;
 }
 @media (max-width: 1500px) {
-  [dir=rtl] .blog-shape-img1 {
+  .blog-shape-img1 {
     left: 42px;
   }
 }
-[dir=rtl] .blog-meta span, [dir=rtl] .blog-meta a {
+
+.blog-meta span, .blog-meta a {
   margin-left: 11px;
   margin-right: 0;
 }
-[dir=rtl] .blog-meta span i, [dir=rtl] .blog-meta a i {
+.blog-meta span i, .blog-meta a i {
   margin-left: 9px;
   margin-right: 0;
 }
-[dir=rtl] .hero-item-content {
+
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.hero-item-content {
   margin-right: auto;
   margin-left: 0;
 }
-[dir=rtl] .cta-wrap1:before {
+
+.cta-wrap1:before {
   right: 0;
   left: auto;
   border-radius: 0 30px 30px 0;
 }
-[dir=rtl] .cta-wrap1:after {
+
+.cta-wrap1:after {
   left: 0;
   right: auto;
   border-radius: 30px 0 0 30px;
 }
-[dir=rtl] .client-box {
+
+.client-box {
   padding: 0 30px 0 0;
 }
-[dir=rtl] .client-thumb-group .thumb:not(:first-child) {
+
+.client-thumb-group .thumb:not(:first-child) {
   margin-right: -20px;
   margin-left: 0;
 }
-[dir=rtl] .client-thumb-group .thumb.icon {
+
+.client-thumb-group .thumb.icon {
   margin-right: -54px;
   margin-left: 0;
 }
-[dir=rtl] .cta-wrap1 {
+
+.cta-wrap1 {
   padding: 46px 47px 46px 30px;
 }
-[dir=rtl] .about1-shape-img1 {
+
+.about1-shape-img1 {
   left: 0;
   right: auto;
 }
-[dir=rtl] .about1-shape-img1 .about1-shape-img-1 {
+
+.about1-shape-img1 .about1-shape-img-1 {
   border-radius: 0 20px 0 0;
 }
-[dir=rtl] .about1-shape-img2 {
+
+.about1-shape-img2 {
   right: 0;
   left: auto;
   transform: rotateY(180deg);
 }
-[dir=rtl] .about-content-wrap .sec-title {
+
+.about-content-wrap .sec-title {
   margin-left: 80px;
   margin-right: 0;
 }
-[dir=rtl] .goal-title-area {
+
+.goal-title-area {
   margin-right: auto;
   margin-left: 0;
 }
-[dir=rtl] .testi-area-slider {
+
+.testi-area-slider {
   margin: 130px -240px 0px 0;
 }
-[dir=rtl] .testi-area-slider .slick-arrow {
+
+.testi-area-slider .slick-arrow {
   left: -5px;
   right: auto;
 }
-[dir=rtl] .marquee-area {
+
+.marquee-area {
   direction: ltr;
 }
-[dir=rtl] .team-card .global-social {
+
+.team-card .global-social {
   padding-right: 15px;
   padding-left: 0;
 }
-[dir=rtl] .team-card .global-social a:not(:last-child) {
+
+.team-card .global-social a:not(:last-child) {
   margin: 13px 4px 13px 11px;
   padding-left: 16px;
   padding-right: 0;
   border-left: 1px solid var(--white-color);
   border-right: 0;
 }
-[dir=rtl] .team-card .global-social a {
+
+.team-card .global-social a {
   margin: 0 10px 0 20px;
 }
-[dir=rtl] .counter-box {
+
+.counter-box {
   padding: 45px 28px 45px 10px;
 }
-[dir=rtl] .accordion-card .accordion-body {
+
+.accordion-card .accordion-body {
   padding: 30px 0px 30px 30px;
 }
-[dir=rtl] .footer-links a:not(:last-child) {
+
+.footer-links a:not(:last-child) {
   border-left: 1px solid rgba(255, 255, 255, 0.7);
   padding-left: 20px;
   margin-left: 20px;
@@ -16212,54 +20748,284 @@ li.trackback {
   padding-right: 0;
   margin-right: 0;
 }
-[dir=rtl] .hero-2 {
+
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.hero-2 {
   direction: ltr;
 }
-[dir=rtl] .hero-style2 {
+
+.hero-style2 {
   direction: rtl;
 }
-[dir=rtl] .hero-client-box {
+
+.hero-client-box {
   direction: rtl;
 }
-[dir=rtl] .service-title-area {
+
+.service-title-area {
   margin-right: auto;
   margin-left: 0;
 }
-[dir=rtl] .testimonial-area-2.arrow-wrap .slick-arrow {
+
+.testimonial-area-2.arrow-wrap .slick-arrow {
   right: auto;
 }
-[dir=rtl] .testimonial-area-2.arrow-wrap .slick-arrow.slick-next {
+
+.testimonial-area-2.arrow-wrap .slick-arrow.slick-next {
   right: 28%;
 }
-[dir=rtl] .event-shape {
+
+.event-shape {
   left: 0;
   right: auto;
 }
-[dir=rtl] .blog-box .blog-meta a img {
+
+.blog-box .blog-meta a img {
   margin-left: 9px;
   margin-right: 0;
 }
-[dir=rtl] .header-layout3 .header-top-bg-shape {
+
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.header-layout3 .header-top-bg-shape {
   left: 0;
   right: auto;
   clip-path: polygon(0 0%, calc(100% - 18px) 0%, 100% 100%, 0% 100%);
 }
-[dir=rtl] .header-layout3 .header-top-bg-shape:after {
+
+.header-layout3 .header-top-bg-shape:after {
   clip-path: polygon(0 0%, calc(100% - 18px) 0%, 100% 100%, 0% 100%);
   left: 0;
   right: auto;
 }
-[dir=rtl] .skill-feature.style2 .progress .progress-value {
+
+.skill-feature.style2 .progress .progress-value {
   transform: translate(100%, 0);
 }
-[dir=rtl] .link-btn i {
+
+.link-btn i {
   margin-right: 5px;
   margin-left: 0;
 }
-[dir=rtl] .team-card.style2 .team-card_wrapp .team-social .global-social {
+
+.team-card.style2 .team-card_wrapp .team-social .global-social {
   padding: 0;
 }
-[dir=rtl] .header-layout4 .simple-icon:not(:last-child) {
+
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.header-layout4 .simple-icon:not(:last-child) {
   border-left: 1px solid rgba(255, 255, 255, 0.4);
   padding-left: 25px;
   margin-left: 0px;
@@ -16267,55 +21033,210 @@ li.trackback {
   padding-right: 0;
   margin-right: 0;
 }
-[dir=rtl] .hero-4 .hero-thumb4-1 {
+
+.hero-4 .hero-thumb4-1 {
   left: 0;
   right: auto;
   transform: rotateY(180deg);
 }
-[dir=rtl] .team-card.style3 .team-card-bg-shape {
+
+.team-card.style3 .team-card-bg-shape {
   left: 0;
   right: auto;
   transform: rotateY(180deg);
 }
-[dir=rtl] .team-card.style3 .team-card_img {
+
+.team-card.style3 .team-card_img {
   margin-left: 20px;
   margin-right: 0;
 }
-[dir=rtl] .testi-area-slider4 {
+
+.testi-area-slider4 {
   margin-left: -80px;
   margin-right: 0;
 }
-[dir=rtl] .testi-area-slider4 .icon-box {
+
+.testi-area-slider4 .icon-box {
   left: 40px;
   right: auto;
 }
+
 @media (max-width: 991px) {
-  [dir=rtl] .testi-area-slider4 {
+  .testi-area-slider4 {
     margin-left: 0;
   }
 }
-[dir=rtl] .process-card-wrap2:after {
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.process-card-wrap2:after {
   transform: translate(-50%, -5px) rotateY(180deg);
   left: 0;
   right: auto;
 }
-[dir=rtl] .process-card-wrap2:nth-child(even):after {
+
+.process-card-wrap2:nth-child(even):after {
   transform: translate(-50%, -5px) rotateY(180deg) rotateX(180deg);
 }
-[dir=rtl] .testi-card.style3 {
+
+.testi-card.style3 {
   padding: 60px 60px 60px 123px;
 }
-[dir=rtl] .team-card.style4 .global-social a {
+
+.team-card.style4 .global-social a {
   border: 1px solid var(--theme-color2);
   border-radius: 50%;
   margin: 0;
   padding: 0;
 }
-[dir=rtl] .header-search-wrap .search-form .form-control {
+
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Extend
+    1.7. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Subscribe
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Client
+    4.00. Simple Sections
+    4.00. Video
+    4.00. Category
+    4.00. Faq
+    4.00. feature
+    4.00. CTA
+    4.00. Service
+    4.00. Pricing
+    4.00. Why choose Us
+    4.00. Project
+    4.00. Event
+    4.00. Gallery
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+.header-search-wrap .search-form .form-control {
   border-left: 1px solid var(--border-color);
   border-right: 0;
 }
-[dir=rtl] .hero-style6 {
+
+.hero-style6 {
   padding-right: 70px;
   padding-left: 0;
   /* Medium devices */
@@ -16323,32 +21244,38 @@ li.trackback {
   /* Extra small devices */
 }
 @media (max-width: 991px) {
-  [dir=rtl] .hero-style6 {
+  .hero-style6 {
     padding: 70px 70px 70px 0px;
   }
 }
 @media (max-width: 767px) {
-  [dir=rtl] .hero-style6 {
+  .hero-style6 {
     padding: 0 50px 50px 50px;
   }
 }
 @media (max-width: 375px) {
-  [dir=rtl] .hero-style6 {
+  .hero-style6 {
     padding: 0 30px 30px 30px;
   }
 }
-[dir=rtl] .hero-intro-card {
+
+.hero-intro-card {
   flex-direction: row-reverse;
   /* Large devices */
 }
 @media (max-width: 1199px) {
-  [dir=rtl] .hero-intro-card {
+  .hero-intro-card {
     flex-direction: column-reverse;
   }
-  [dir=rtl] .hero-intro-card .intro-card-img {
+  .hero-intro-card .intro-card-img {
     align-self: self-end;
   }
 }
-[dir=rtl] .product-intro-card .intro-card-details {
+
+.product-intro-card .intro-card-details {
   text-align: end;
+}
+
+html {
+  scroll-behavior: smooth;
 }

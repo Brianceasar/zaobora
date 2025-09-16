@@ -1,3 +1,7 @@
+@use '../../base/variable' as *;
+@use 'sass:map';
+@use '../../base/mixin' as *;
+
 .subscribe-sec-shape {
     position: relative;
     z-index: -1;

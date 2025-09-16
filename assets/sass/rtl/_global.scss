@@ -1,15 +1,14 @@
-@include rtl {
-    @import 'spacing';
+@use '../base/mixin' as *;
+@use 'spacing' as *;
+    @use 'common' as *;
+    @use 'header' as *;
+    @use 'footer' as *;
+    @use 'simple-sections' as *;
+    @use 'blog' as *;
+    @use 'home_1' as *;
+    @use 'home_2' as *;
+    @use 'home_3' as *;
+    @use 'home_4' as *;
+    @use 'home_5' as *;
+    @use 'home_6' as *;
 
-    @import 'common';
-    @import 'header';
-    @import 'footer';
-    @import 'simple-sections';
-    @import 'blog';
-    @import 'home_1';
-    @import 'home_2';
-    @import 'home_3';
-    @import 'home_4';
-    @import 'home_5';
-    @import 'home_6';
-}

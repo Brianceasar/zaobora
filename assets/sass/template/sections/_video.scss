@@ -1,3 +1,7 @@
+@use '../../base/variable' as *;
+@use 'sass:map';
+@use '../../base/mixin' as *;
+
 /* Video 1 ---------------------------------- */ 
 .video-area-1 {
     .video-wrap {

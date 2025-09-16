@@ -1,3 +1,7 @@
+@use '../base/variable' as *;
+@use 'sass:map';
+@use '../base/mixin' as *;
+
 .header-layout3 .header-top-bg-shape {
     left: 0;
     right: auto;

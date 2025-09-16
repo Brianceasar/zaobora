@@ -1,3 +1,7 @@
+@use '../base/variable' as *;
+@use 'sass:map';
+@use '../base/mixin' as *;
+
 /*-- Padding Left And Right --*/
 @for $i from 1 through $space-count {
   .px-#{5 * $i} {

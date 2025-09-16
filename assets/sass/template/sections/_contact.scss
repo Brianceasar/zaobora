@@ -1,3 +1,7 @@
+@use '../../base/variable' as *;
+@use 'sass:map';
+@use '../../base/mixin' as *;
+
 /****contact page*****/
 .contact-page-wrap {
     border-radius: 20px;

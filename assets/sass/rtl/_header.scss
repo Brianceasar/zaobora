@@ -1,3 +1,7 @@
+@use '../base/variable' as *;
+@use 'sass:map';
+@use '../base/mixin' as *;
+
 .header-links li:not(:last-child) {
     margin: 0 0 0 35px;
 }

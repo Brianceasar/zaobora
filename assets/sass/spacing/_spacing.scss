@@ -1,8 +1,8 @@
 // Padding
-@import 'padding';
+@use 'padding' as *;
 
 // Margin 
-@import 'margin';
+@use 'margin' as *;
 
 // Section Space
-@import 'section-space';
+@use 'section-space' as *;

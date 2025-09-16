@@ -1,3 +1,7 @@
+@use '../../base/variable' as *;
+@use 'sass:map';
+@use '../../base/mixin' as *;
+
 .comment-form {
     margin-top: var(--blog-space-y, 20px);
     position: relative;

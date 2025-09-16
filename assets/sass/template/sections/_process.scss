@@ -1,3 +1,7 @@
+@use '../../base/variable' as *;
+@use 'sass:map';
+@use '../../base/mixin' as *;
+
 /* Process Area 1 ---------------------------------- */
 .process-card {
     background-color: $white-color;

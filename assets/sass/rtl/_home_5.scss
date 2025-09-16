@@ -1,3 +1,7 @@
+@use '../base/variable' as *;
+@use 'sass:map';
+@use '../base/mixin' as *;
+
 .process-card-wrap2:after {
     transform: translate(-50%, -5px) rotateY(180deg);
     left: 0;

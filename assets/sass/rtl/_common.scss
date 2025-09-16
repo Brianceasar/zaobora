@@ -1,3 +1,7 @@
+@use '../base/variable' as *;
+@use 'sass:map';
+@use '../base/mixin' as *;
+
 .sub-title:after, .sub-title:before {
     margin-left: 12px;
     margin-right: 0;

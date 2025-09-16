@@ -1,3 +1,7 @@
+@use '../../base/variable' as *;
+@use 'sass:map';
+@use '../../base/mixin' as *;
+
 /* Faq 1 ---------------------------------- */ 
 .faq-area-1 {
     margin-top: -400px;

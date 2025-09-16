@@ -1,3 +1,7 @@
+@use '../../base/variable' as *;
+@use 'sass:map';
+@use '../../base/mixin' as *;
+
 /* Client 2 ---------------------------------- */
 .client-area-2 {
     padding-top: 70px;
