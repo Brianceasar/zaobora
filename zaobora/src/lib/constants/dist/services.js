@@ -9,6 +9,7 @@ exports.SERVICES_CONTENT = {
     backgroundImage: "/assets/img/service/tree-background.png",
     cards: [
         {
+            icon: "",
             href: "/services#farmeradvisory",
             title: "Smart Agriculture and Precision Farming Services",
             description: "Our personalized extension services deliver evidence-based agroecological advice, access to certified farm inputs, and precision farming techniques. These solutions help smallholder farmers in Tanzania optimize yields, boost productivity, and achieve sustainable agriculture.",

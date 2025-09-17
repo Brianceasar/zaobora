@@ -7,6 +7,7 @@ export const SERVICES_CONTENT = {
   backgroundImage: "/assets/img/service/tree-background.png",
   cards: [
     {
+      icon:"",
       href: "/services#farmeradvisory",
       title: "Smart Agriculture and Precision Farming Services",
       description:
