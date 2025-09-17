@@ -1,0 +1,25 @@
+"use strict";
+exports.__esModule = true;
+var GetInTouchSection = function () { return (React.createElement("section", { id: "getintouch", className: "py-16" },
+    React.createElement("div", { className: "container mx-auto px-4" },
+        React.createElement("div", { className: "relative bg-green-700 rounded-lg p-8 md:p-12 text-white" },
+            React.createElement("div", { className: "row flex flex-wrap -mx-4 justify-between items-center" },
+                React.createElement("div", { className: "w-full lg:w-6/12 px-4 mb-8 lg:mb-0" },
+                    React.createElement("div", { className: "subs-contentv2" },
+                        React.createElement("h5", { className: "text-xl font-bold mb-2" }, "Get In Touch"),
+                        React.createElement("h2", { className: "text-3xl md:text-4xl font-bold" },
+                            "Have a Question? Send Us a ",
+                            React.createElement("span", { className: "text-yellow-400" }, "Message")))),
+                React.createElement("div", { className: "w-full lg:w-6/12 px-4" },
+                    React.createElement("form", { id: "contactForm", action: "https://formspree.io/f/mdkoebpr", method: "POST", className: "grid grid-cols-1 md:grid-cols-2 gap-4" },
+                        React.createElement("div", { className: "col-span-1" },
+                            React.createElement("input", { type: "text", name: "firstName", id: "firstName", placeholder: "Name", className: "w-full p-3 rounded-md bg-white text-gray-800 placeholder-gray-500 border border-transparent focus:outline-none focus:ring-2 focus:ring-green-400" })),
+                        React.createElement("div", { className: "col-span-1" },
+                            React.createElement("input", { type: "email", name: "email", id: "email", placeholder: "E-mail", required: true, className: "w-full p-3 rounded-md bg-white text-gray-800 placeholder-gray-500 border border-transparent focus:outline-none focus:ring-2 focus:ring-green-400" })),
+                        React.createElement("div", { className: "col-span-2" },
+                            React.createElement("input", { type: "text", name: "subject", id: "subject", placeholder: "Subject", className: "w-full p-3 rounded-md bg-white text-gray-800 placeholder-gray-500 border border-transparent focus:outline-none focus:ring-2 focus:ring-green-400" })),
+                        React.createElement("div", { className: "col-span-2" },
+                            React.createElement("textarea", { name: "message", id: "message", placeholder: "Message", required: true, className: "w-full p-3 rounded-md bg-white text-gray-800 placeholder-gray-500 border border-transparent focus:outline-none focus:ring-2 focus:ring-green-400 h-32" })),
+                        React.createElement("div", { className: "col-span-2" },
+                            React.createElement("button", { type: "submit", className: "w-full md:w-auto bg-white text-green-700 font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition-colors" }, "Send"))))))))); };
+exports["default"] = GetInTouchSection;
