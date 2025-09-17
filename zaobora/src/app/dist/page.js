@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
-var Header_1 = require("../components/layout/Header");
-var Footer_1 = require("../components/layout/Footer");
+var Header_1 = require("../components/layout/header/Header");
+var Footer_1 = require("../components/layout/footer/Footer");
 // import Preloader from "../components/ui/Preloader";
 // import ScrollToTop from "../components/ui/ScrollToTop";
 var HeroSection_1 = require("../components/section/HeroSection");
