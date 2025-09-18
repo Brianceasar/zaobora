@@ -6,6 +6,8 @@ var react_1 = require("react");
 var image_1 = require("next/image");
 var link_1 = require("next/link");
 var fa6_1 = require("react-icons/fa6");
+var ContactInfoSection_1 = require("@/components/section/ContactInfoSection");
+var GetInTouchSection_1 = require("@/components/section/GetInTouchSection");
 function ServicePage(_a) {
     var serviceData = _a.serviceData;
     var _b = react_1.useState(false), isVisible = _b[0], setIsVisible = _b[1];
@@ -48,13 +50,22 @@ function ServicePage(_a) {
                         React.createElement("div", { className: "relative" },
                             React.createElement(image_1["default"], { src: "/assets/img/service/farmer-training.jpg", alt: serviceData.title, width: 600, height: 400, className: "rounded-2xl shadow-2xl" })))))),
         React.createElement("section", { id: "details", className: "py-20 container mx-auto px-4 lg:px-6" },
-            React.createElement("div", { className: "max-w-4xl mx-auto mb-12" },
-                React.createElement("h2", { className: "text-3xl font-bold text-gray-900 mb-6" }, "Overview"),
-                React.createElement("p", { className: "text-lg text-gray-700 leading-relaxed" }, serviceData.fullDescription)),
+            React.createElement("div", { className: "max-w-4xl  mb-12 text-left" },
+                React.createElement("h2", { className: "text-3xl font-bold text-gray-900 mb-6 text-left" }, "Overview"),
+                React.createElement("p", { className: "text-lg text-gray-700 leading-relaxed text-left" }, serviceData.fullDescription)),
+            serviceData.detailedServices && (React.createElement("div", { className: "mb-16" },
+                React.createElement("h3", { className: "text-2xl font-semibold text-gray-900 mb-6" }, "What We Do"),
+                React.createElement("div", { className: "space-y-6 max-w-4xl" }, serviceData.detailedServices.map(function (item, idx) { return (React.createElement("div", { key: idx, className: "flex items-start gap-4" },
+                    React.createElement("div", { className: "flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-green-100 text-2xl" }, item.icon),
+                    React.createElement("div", null,
+                        React.createElement("h4", { className: "text-lg font-medium text-gray-800" }, item.title),
+                        React.createElement("p", { className: "text-gray-600" }, item.description)))); })))),
             serviceData.keyBenefits && (React.createElement("div", { className: "mb-16" },
                 React.createElement("h3", { className: "text-2xl font-semibold text-gray-900 mb-6" }, "Key Benefits"),
-                React.createElement("ul", { className: "grid grid-cols-1 md:grid-cols-2 gap-4" }, serviceData.keyBenefits.map(function (benefit, idx) { return (React.createElement("li", { key: idx, className: "flex items-start gap-3" },
+                React.createElement("ul", { className: "grid grid-cols-1 md:grid-cols-2 gap-4" }, serviceData.keyBenefits.map(function (benefit, idx) { return (React.createElement("li", { key: idx, className: "flex items-start text-gray-700 gap-3" },
                     React.createElement(fa6_1.FaCheck, { className: "text-green-600 mt-1" }),
-                    React.createElement("span", null, benefit))); })))))));
+                    React.createElement("span", null, benefit))); }))))),
+        React.createElement(ContactInfoSection_1["default"], null),
+        React.createElement(GetInTouchSection_1["default"], null)));
 }
 exports["default"] = ServicePage;

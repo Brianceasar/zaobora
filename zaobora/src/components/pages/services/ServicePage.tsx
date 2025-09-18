@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight, FaCheck } from "react-icons/fa6";
 import {FaQuoteLeft} from 'react-icons/fa';
+import ContactInfoSection from "@/components/section/ContactInfoSection";
+import GetInTouchSection from "@/components/section/GetInTouchSection";
 
 interface ServiceData {
   title: string;
@@ -14,6 +16,7 @@ interface ServiceData {
   shortDescription: string;
   fullDescription: string;
   keyBenefits?: string[];
+    detailedServices?: { title: string; description: string; icon: string }[];
 }
 
 export default function ServicePage({ serviceData }: { serviceData: ServiceData }) {
@@ -128,10 +131,31 @@ export default function ServicePage({ serviceData }: { serviceData: ServiceData 
       {/* Detailed Content Section */}
       <section id="details" className="py-20 container mx-auto px-4 lg:px-6">
         {/* Full Description */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Overview</h2>
-          <p className="text-lg text-gray-700 leading-relaxed">{serviceData.fullDescription}</p>
+        <div className="max-w-4xl  mb-12 text-left">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-left">Overview</h2>
+          <p className="text-lg text-gray-700 leading-relaxed text-left">{serviceData.fullDescription}</p>
         </div>
+
+        {/*What we do*/}
+        {serviceData.detailedServices && (
+  <div className="mb-16">
+    <h3 className="text-2xl font-semibold text-gray-900 mb-6">What We Do</h3>
+    <div className="space-y-6 max-w-4xl">
+      {serviceData.detailedServices.map((item, idx) => (
+        <div key={idx} className="flex items-start gap-4">
+          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-green-100 text-2xl">
+            {item.icon}
+          </div>
+          <div>
+            <h4 className="text-lg font-medium text-gray-800">{item.title}</h4>
+            <p className="text-gray-600">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
 
         {/* Key Benefits */}
         {serviceData.keyBenefits && (
@@ -139,7 +163,7 @@ export default function ServicePage({ serviceData }: { serviceData: ServiceData 
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">Key Benefits</h3>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {serviceData.keyBenefits.map((benefit: string, idx: number) => (
-                <li key={idx} className="flex items-start gap-3">
+                <li key={idx} className="flex items-start text-gray-700 gap-3">
                   <FaCheck className="text-green-600 mt-1" />
                   <span>{benefit}</span>
                 </li>
@@ -148,6 +172,9 @@ export default function ServicePage({ serviceData }: { serviceData: ServiceData 
           </div>
         )}
       </section>
+        <ContactInfoSection />
+      <GetInTouchSection />
     </div>
+        
   );
 }
