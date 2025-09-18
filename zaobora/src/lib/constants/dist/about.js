@@ -13,7 +13,7 @@ exports.ABOUT_CONTENT = {
         icon: fa6_1.FaArrowRight
     },
     image: {
-        src: "/assets/img/about/aboutv-3.png",
+        src: "/img/about/zaobora-about2.webp",
         alt: "about us image of a growing",
         width: 500,
         height: 500

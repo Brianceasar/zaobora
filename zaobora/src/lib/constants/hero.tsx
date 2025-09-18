@@ -14,7 +14,7 @@ export const HERO_CONTENT = {
     icon: FaArrowRight,
   },
   image: {
-    src: "/assets/img/banner/hero-landing-image.png",
+    src: "/img/hero/zaobora-hero.webp",
     alt: "zaobora empowering farmers",
     width: 800,
     height: 800,

@@ -85,7 +85,7 @@ var ServiceSection = function () {
                     React.createElement("h2", { className: "text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight" },
                         React.createElement("span", { className: "block" }, services_1.SERVICES_CONTENT.title.split(' ').slice(0, 2).join(' ')),
                         React.createElement("span", { className: "bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent" }, services_1.SERVICES_CONTENT.title.split(' ').slice(2).join(' '))),
-                    React.createElement("p", { className: "text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed" }, "Comprehensive agricultural solutions designed to empower farmers and build sustainable communities."))),
+                    React.createElement("p", { className: "text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed" }, "We provide integrated agricultural solutions that support farmers from knowledge and training to inputs, finance, technology, and research. Our goal is to improve productivity, profitability, and sustainability while making farmers more resilient and prosperous."))),
             React.createElement("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" }, services_1.SERVICES_CONTENT.cards.map(function (service, index) { return (React.createElement("div", { key: index, className: "transform transition-all duration-700 " + (visibleCards.includes(index)
                     ? 'translate-y-0 opacity-100'
                     : 'translate-y-10 opacity-0'), style: { transitionDelay: index * 100 + "ms" } },

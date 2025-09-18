@@ -46,7 +46,7 @@ const Footer = () => {
               <div className="group">
                 <Link href="/" className="inline-block mb-6 transform transition-transform duration-300 hover:scale-105">
                   <Image
-                    src="/assets/img/logo/logo_2.png"
+                    src="/img/logo/footer-logo.png"
                     alt="Zao Bora - Empowering Farmers"
                     width={180}
                     height={60}

@@ -62,12 +62,13 @@ const Header = () => {
             >
               <div className="transform transition-transform duration-300 group-hover:scale-105">
                 <Image
-                  src="/assets/img/logo/footer-logo.png"
+                  src="/img/logo/logo_2.png"
                   alt="Zao Bora - Empowering Farmers"
                   width={isScrolled ? 130 : 150}
                   height={isScrolled ? 40 : 50}
                   className="transition-all duration-300"
                   priority
+                  style={{ height: "auto"}}
                 />
               </div>
               {/* Subtle green glow on hover */}
@@ -136,7 +137,7 @@ const Header = () => {
                 ))}
                 
                 {/* CTA Button */}
-                <li className="ml-4">
+                {/* <li className="ml-4">
                   <Link
                     href="/contact"
                     className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-2.5 
@@ -146,7 +147,7 @@ const Header = () => {
                   >
                     Get Started
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
 
@@ -193,7 +194,7 @@ const Header = () => {
         <div className="p-6 border-b border-gray-100 bg-gradient-to-r from-green-50 to-emerald-50">
           <div className="flex items-center justify-between">
             <Image
-              src="/assets/img/logo/footer-logo.png"
+              src="/img/logo/logo_2.png"
               alt="Zao Bora"
               width={120}
               height={40}
@@ -254,7 +255,7 @@ const Header = () => {
           </ul>
 
           {/* Mobile CTA */}
-          <div className="mt-8 pt-6 border-t border-gray-100">
+          {/* <div className="mt-8 pt-6 border-t border-gray-100">
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
@@ -264,7 +265,7 @@ const Header = () => {
             >
               Get Started Today
             </Link>
-          </div>
+          </div> */}
         </nav>
       </div>
     </>

@@ -183,7 +183,7 @@ const ServiceSection = () => {
             </h2>
 
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Comprehensive agricultural solutions designed to empower farmers and build sustainable communities.
+              We provide integrated agricultural solutions that support farmers from knowledge and training to inputs, finance, technology, and research. Our goal is to improve productivity, profitability, and sustainability while making farmers more resilient and prosperous.
             </p>
           </div>
         </div>

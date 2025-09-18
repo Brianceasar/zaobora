@@ -33,7 +33,7 @@ var Footer = function () {
                     React.createElement("div", { className: "lg:col-span-2" },
                         React.createElement("div", { className: "group" },
                             React.createElement(link_1["default"], { href: "/", className: "inline-block mb-6 transform transition-transform duration-300 hover:scale-105" },
-                                React.createElement(image_1["default"], { src: "/assets/img/logo/logo_2.png", alt: "Zao Bora - Empowering Farmers", width: 180, height: 60, className: "brightness-0 invert" }))),
+                                React.createElement(image_1["default"], { src: "/img/logo/footer-logo.png", alt: "Zao Bora - Empowering Farmers", width: 180, height: 60, className: "brightness-0 invert" }))),
                         React.createElement("p", { className: "text-gray-300 mb-6 leading-relaxed max-w-md" }, "Empowering farmers through innovative agricultural solutions, sustainable practices, and comprehensive support services. Whether you need consultation, market linkage, or agroforestry expertise, we're here to help you grow."),
                         React.createElement("div", null,
                             React.createElement("h5", { className: "text-lg font-semibold mb-4 text-green-400" }, "Connect With Us"),
