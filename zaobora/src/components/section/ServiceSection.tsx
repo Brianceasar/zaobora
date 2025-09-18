@@ -1,7 +1,19 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { SERVICES_CONTENT } from "@/lib/constants/services";
+import { SERVICES_CONTENT } from "@/lib/constants/service-list";
+import { FaUserGraduate, FaSeedling, FaCreditCard, FaFlask, FaChartBar, FaRadio, FaHandshake } from 'react-icons/fa6';
+import { FaTint } from 'react-icons/fa';
+const ICONS = {
+  FaUserGraduate,
+  FaSeedling,
+  FaCreditCard,
+  FaFlask,
+  FaChartBar,
+  FaRadio,
+  FaHandshake,
+  FaTint,
+};
 
 // Proper TypeScript Interface for Service Card
 interface ServiceCardProps {
@@ -200,13 +212,16 @@ const ServiceSection = () => {
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <ServiceCard {...service} />
+              <ServiceCard
+                {...service}
+                icon={ICONS[service.icon as keyof typeof ICONS]}
+              />
             </div>
           ))}
         </div>
 
         {/* Bottom CTA Section */}
-        <div className={`text-center mt-16 transform transition-all duration-1000 delay-1000 ${
+        {/* <div className={`text-center mt-16 transform transition-all duration-1000 delay-1000 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-green-100 p-8 max-w-2xl mx-auto">
@@ -239,7 +254,7 @@ const ServiceSection = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -1,0 +1,60 @@
+// src/components/services/ServicePage.tsx
+"use client";
+"use strict";
+exports.__esModule = true;
+var react_1 = require("react");
+var image_1 = require("next/image");
+var link_1 = require("next/link");
+var fa6_1 = require("react-icons/fa6");
+function ServicePage(_a) {
+    var serviceData = _a.serviceData;
+    var _b = react_1.useState(false), isVisible = _b[0], setIsVisible = _b[1];
+    var heroRef = react_1.useRef(null);
+    react_1.useEffect(function () {
+        var observer = new IntersectionObserver(function (_a) {
+            var entry = _a[0];
+            return entry.isIntersecting && setIsVisible(true);
+        }, { threshold: 0.1 });
+        if (heroRef.current)
+            observer.observe(heroRef.current);
+        return function () { return observer.disconnect(); };
+    }, []);
+    return (React.createElement("div", { className: "min-h-screen bg-white" },
+        React.createElement("section", { ref: heroRef, className: "relative pt-24 pb-20 bg-gradient-to-br from-green-50 via-white to-emerald-50 overflow-hidden" },
+            React.createElement("div", { className: "absolute inset-0 overflow-hidden pointer-events-none" },
+                React.createElement("div", { className: "absolute top-20 left-20 w-32 h-32 bg-green-200/20 rounded-full animate-pulse" }),
+                React.createElement("div", { className: "absolute bottom-20 right-20 w-24 h-24 bg-emerald-200/30 rounded-full animate-bounce", style: { animationDelay: "1s" } })),
+            React.createElement("div", { className: "container mx-auto px-4 lg:px-6 relative z-10" },
+                React.createElement("div", { className: "grid lg:grid-cols-2 gap-12 items-center" },
+                    React.createElement("div", { className: "transform transition-all duration-1000 " + (isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0") },
+                        React.createElement("nav", { className: "flex items-center gap-2 text-sm text-gray-600 mb-6" },
+                            React.createElement(link_1["default"], { href: "/", className: "hover:text-green-600 transition-colors" }, "Home"),
+                            React.createElement("span", null, "/"),
+                            React.createElement(link_1["default"], { href: "/services", className: "hover:text-green-600 transition-colors" }, "Services"),
+                            React.createElement("span", null, "/"),
+                            React.createElement("span", { className: "text-green-600 font-medium" }, serviceData.title)),
+                        React.createElement("div", { className: "inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-6" },
+                            React.createElement("span", { className: "text-xl" }, serviceData.emoji),
+                            React.createElement("span", null, serviceData.category)),
+                        React.createElement("h1", { className: "text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight" }, serviceData.title),
+                        React.createElement("p", { className: "text-xl text-gray-600 mb-8 leading-relaxed" }, serviceData.shortDescription),
+                        React.createElement("div", { className: "flex flex-col sm:flex-row gap-4" },
+                            React.createElement(link_1["default"], { href: "/contact", className: "group inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 \n                           text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl \n                           transform hover:scale-105 transition-all duration-300" },
+                                React.createElement("span", null, "Get Started"),
+                                React.createElement(fa6_1.FaArrowRight, { className: "group-hover:translate-x-1 transition-transform duration-300" })),
+                            React.createElement(link_1["default"], { href: "#details", className: "inline-flex items-center gap-2 text-green-600 hover:text-green-700 \n                           font-semibold border-2 border-green-200 hover:border-green-300 \n                           px-8 py-4 rounded-xl transition-all duration-300" },
+                                React.createElement("span", null, "Learn More")))),
+                    React.createElement("div", { className: "transform transition-all duration-1000 delay-300 " + (isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0") },
+                        React.createElement("div", { className: "relative" },
+                            React.createElement(image_1["default"], { src: "/assets/img/service/farmer-training.jpg", alt: serviceData.title, width: 600, height: 400, className: "rounded-2xl shadow-2xl" })))))),
+        React.createElement("section", { id: "details", className: "py-20 container mx-auto px-4 lg:px-6" },
+            React.createElement("div", { className: "max-w-4xl mx-auto mb-12" },
+                React.createElement("h2", { className: "text-3xl font-bold text-gray-900 mb-6" }, "Overview"),
+                React.createElement("p", { className: "text-lg text-gray-700 leading-relaxed" }, serviceData.fullDescription)),
+            serviceData.keyBenefits && (React.createElement("div", { className: "mb-16" },
+                React.createElement("h3", { className: "text-2xl font-semibold text-gray-900 mb-6" }, "Key Benefits"),
+                React.createElement("ul", { className: "grid grid-cols-1 md:grid-cols-2 gap-4" }, serviceData.keyBenefits.map(function (benefit, idx) { return (React.createElement("li", { key: idx, className: "flex items-start gap-3" },
+                    React.createElement(fa6_1.FaCheck, { className: "text-green-600 mt-1" }),
+                    React.createElement("span", null, benefit))); })))))));
+}
+exports["default"] = ServicePage;

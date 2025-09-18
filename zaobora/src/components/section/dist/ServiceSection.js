@@ -20,7 +20,19 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
 };
 exports.__esModule = true;
 var react_1 = require("react");
-var services_1 = require("@/lib/constants/services");
+var service_list_1 = require("@/lib/constants/service-list");
+var fa6_1 = require("react-icons/fa6");
+var fa_1 = require("react-icons/fa");
+var ICONS = {
+    FaUserGraduate: fa6_1.FaUserGraduate,
+    FaSeedling: fa6_1.FaSeedling,
+    FaCreditCard: fa6_1.FaCreditCard,
+    FaFlask: fa6_1.FaFlask,
+    FaChartBar: fa6_1.FaChartBar,
+    FaRadio: fa6_1.FaRadio,
+    FaHandshake: fa6_1.FaHandshake,
+    FaTint: fa_1.FaTint
+};
 // Enhanced ServiceCard Component
 var ServiceCard = function (_a) {
     var IconComponent = _a.icon, title = _a.title, description = _a.description, href = _a.href, features = _a.features;
@@ -56,7 +68,7 @@ var ServiceSection = function () {
             if (entry.isIntersecting) {
                 setIsVisible(true);
                 // Stagger card animations
-                services_1.SERVICES_CONTENT.cards.forEach(function (_, index) {
+                service_list_1.SERVICES_CONTENT.cards.forEach(function (_, index) {
                     setTimeout(function () {
                         setVisibleCards(function (prev) { return __spreadArrays(prev, [index]); });
                     }, index * 150);
@@ -68,8 +80,8 @@ var ServiceSection = function () {
         }
         return function () { return observer.disconnect(); };
     }, []);
-    return (React.createElement("section", { ref: sectionRef, id: services_1.SERVICES_CONTENT.sectionId, className: "relative py-20 overflow-hidden" },
-        React.createElement("div", { className: "absolute inset-0 bg-cover bg-center bg-fixed", style: { backgroundImage: "url('" + services_1.SERVICES_CONTENT.backgroundImage + "')" } }),
+    return (React.createElement("section", { ref: sectionRef, id: service_list_1.SERVICES_CONTENT.sectionId, className: "relative py-20 overflow-hidden" },
+        React.createElement("div", { className: "absolute inset-0 bg-cover bg-center bg-fixed", style: { backgroundImage: "url('" + service_list_1.SERVICES_CONTENT.backgroundImage + "')" } }),
         React.createElement("div", { className: "absolute inset-0 bg-gradient-to-b from-white/95 via-green-50/90 to-white/95" }),
         React.createElement("div", { className: "absolute inset-0 overflow-hidden pointer-events-none" },
             React.createElement("div", { className: "absolute top-20 left-20 w-32 h-32 bg-green-200/20 rounded-full animate-pulse" }),
@@ -80,26 +92,15 @@ var ServiceSection = function () {
                 React.createElement("div", { className: "max-w-4xl mx-auto" },
                     React.createElement("div", { className: "flex items-center justify-center gap-3 mb-4" },
                         React.createElement("div", { className: "w-12 h-0.5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full" }),
-                        React.createElement("span", { className: "text-green-600 uppercase font-semibold text-sm tracking-wide" }, services_1.SERVICES_CONTENT.subtitle),
+                        React.createElement("span", { className: "text-green-600 uppercase font-semibold text-sm tracking-wide" }, service_list_1.SERVICES_CONTENT.subtitle),
                         React.createElement("div", { className: "w-12 h-0.5 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full" })),
                     React.createElement("h2", { className: "text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight" },
-                        React.createElement("span", { className: "block" }, services_1.SERVICES_CONTENT.title.split(' ').slice(0, 2).join(' ')),
-                        React.createElement("span", { className: "bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent" }, services_1.SERVICES_CONTENT.title.split(' ').slice(2).join(' '))),
+                        React.createElement("span", { className: "block" }, service_list_1.SERVICES_CONTENT.title.split(' ').slice(0, 2).join(' ')),
+                        React.createElement("span", { className: "bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent" }, service_list_1.SERVICES_CONTENT.title.split(' ').slice(2).join(' '))),
                     React.createElement("p", { className: "text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed" }, "We provide integrated agricultural solutions that support farmers from knowledge and training to inputs, finance, technology, and research. Our goal is to improve productivity, profitability, and sustainability while making farmers more resilient and prosperous."))),
-            React.createElement("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" }, services_1.SERVICES_CONTENT.cards.map(function (service, index) { return (React.createElement("div", { key: index, className: "transform transition-all duration-700 " + (visibleCards.includes(index)
+            React.createElement("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" }, service_list_1.SERVICES_CONTENT.cards.map(function (service, index) { return (React.createElement("div", { key: index, className: "transform transition-all duration-700 " + (visibleCards.includes(index)
                     ? 'translate-y-0 opacity-100'
                     : 'translate-y-10 opacity-0'), style: { transitionDelay: index * 100 + "ms" } },
-                React.createElement(ServiceCard, __assign({}, service)))); })),
-            React.createElement("div", { className: "text-center mt-16 transform transition-all duration-1000 delay-1000 " + (isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0') },
-                React.createElement("div", { className: "bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-green-100 p-8 max-w-2xl mx-auto" },
-                    React.createElement("h3", { className: "text-2xl font-bold text-gray-900 mb-4" }, "Ready to Transform Your Farm?"),
-                    React.createElement("p", { className: "text-gray-600 mb-6" }, "Get personalized consultation and discover which services are perfect for your agricultural goals."),
-                    React.createElement("div", { className: "flex flex-col sm:flex-row gap-4 justify-center" },
-                        React.createElement("a", { href: "/contact", className: "inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 \n                         text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl \n                         transform hover:scale-105 transition-all duration-300 group" },
-                            React.createElement("span", null, "Get Started Today"),
-                            React.createElement("svg", { className: "w-5 h-5 group-hover:translate-x-1 transition-transform duration-300", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" },
-                                React.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M17 8l4 4m0 0l-4 4m4-4H3" }))),
-                        React.createElement("a", { href: "/services", className: "inline-flex items-center gap-2 text-green-600 hover:text-green-700 \n                         font-semibold border-2 border-green-200 hover:border-green-300 \n                         px-8 py-4 rounded-xl transition-all duration-300" },
-                            React.createElement("span", null, "View All Services"))))))));
+                React.createElement(ServiceCard, __assign({}, service, { icon: ICONS[service.icon] })))); })))));
 };
 exports["default"] = ServiceSection;
