@@ -55,7 +55,7 @@ const VacanciesPage = () => {
       <Header />
 
       {/* Hero */}
-  <section className="relative pt-20 md:pt-24 pb-12 md:pb-16 bg-gradient-to-br from-green-50 via-white to-emerald-100">
+  <section className="relative pt-20 md:pt-24 pb-12 md:pb-16 bg-gradient-to-br from-green-50 via-white to-green-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <nav className="flex justify-center gap-2 text-sm text-gray-600 mb-6">
             <Link href="/" className="hover:text-green-600">Home</Link>
