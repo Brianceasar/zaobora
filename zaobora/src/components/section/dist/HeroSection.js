@@ -2,7 +2,6 @@
 "use strict";
 exports.__esModule = true;
 var image_1 = require("next/image");
-var link_1 = require("next/link");
 var react_1 = require("react");
 var hero_1 = require("@/lib/constants/hero");
 var HeroSection = function () {
@@ -42,16 +41,7 @@ var HeroSection = function () {
                             React.createElement("div", { className: "text-sm text-gray-600" }, "Success Stories")),
                         React.createElement("div", { className: "text-center" },
                             React.createElement("div", { className: "text-2xl md:text-3xl font-bold text-green-600" }, "95%"),
-                            React.createElement("div", { className: "text-sm text-gray-600" }, "Satisfaction Rate"))),
-                    React.createElement("div", { className: "flex flex-col sm:flex-row items-start sm:items-center gap-4" },
-                        React.createElement(link_1["default"], { href: hero_1.HERO_CONTENT.cta.href, className: "group relative inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 \n                         text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl \n                         transform hover:scale-105 transition-all duration-300 overflow-hidden" },
-                            React.createElement("span", { className: "relative z-10" }, hero_1.HERO_CONTENT.cta.label),
-                            React.createElement(hero_1.HERO_CONTENT.cta.icon, { className: "relative z-10 group-hover:translate-x-1 transition-transform duration-300" }),
-                            React.createElement("div", { className: "absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent \n                             transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" })),
-                        React.createElement(link_1["default"], { href: "/about", className: "group inline-flex items-center gap-2 text-gray-700 hover:text-green-600 \n                         font-medium transition-colors duration-300" },
-                            React.createElement("span", null, "Learn More"),
-                            React.createElement("svg", { className: "w-5 h-5 group-hover:translate-x-1 transition-transform duration-300", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" },
-                                React.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M17 8l4 4m0 0l-4 4m4-4H3" }))))),
+                            React.createElement("div", { className: "text-sm text-gray-600" }, "Satisfaction Rate")))),
                 React.createElement("div", { className: "relative transform transition-all duration-1000 delay-300 " + (isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0') },
                     React.createElement("div", { className: "relative", style: { transform: "translateY(" + scrollY * 0.1 + "px)" } },
                         React.createElement("div", { className: "relative overflow-hidden rounded-2xl shadow-2xl" },

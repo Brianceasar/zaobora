@@ -86,7 +86,7 @@ export default function ServicePage({ serviceData }: { serviceData: ServiceData 
               </p>
 
               {/* CTA */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/contact"
                   className="group inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 
@@ -105,7 +105,7 @@ export default function ServicePage({ serviceData }: { serviceData: ServiceData 
                 >
                   <span>Learn More</span>
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             {/* Hero Image (optional, if you add per-service images) */}

@@ -198,7 +198,7 @@ const AboutSection = () => {
             </div>
 
             {/* CTA Button */}
-            <Link
+            {/* <Link
               href={ABOUT_CONTENT.cta.href}
               className="group inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 
                        text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl 
@@ -207,10 +207,10 @@ const AboutSection = () => {
               <span className="relative z-10">{ABOUT_CONTENT.cta.label}</span>
               <ABOUT_CONTENT.cta.icon className="relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
               
-              {/* Button shine effect */}
+              
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent 
                            transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-            </Link>
+            </Link> */}
 
             {/* Additional Info */}
             <div className="mt-8 p-6 bg-gradient-to-r from-gray-50 to-green-50 rounded-xl border border-green-100">

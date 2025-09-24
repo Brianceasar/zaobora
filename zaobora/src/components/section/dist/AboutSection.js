@@ -2,7 +2,6 @@
 "use strict";
 exports.__esModule = true;
 var image_1 = require("next/image");
-var link_1 = require("next/link");
 var react_1 = require("react");
 var about_1 = require("@/lib/constants/about");
 var AboutSection = function () {
@@ -88,10 +87,6 @@ var AboutSection = function () {
                                 React.createElement("div", null,
                                     React.createElement("div", { className: "font-semibold text-gray-900" }, "Proven"),
                                     React.createElement("div", { className: "text-sm text-gray-600" }, "Results"))))),
-                    React.createElement(link_1["default"], { href: about_1.ABOUT_CONTENT.cta.href, className: "group inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 \n                       text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl \n                       transform hover:scale-105 transition-all duration-300 relative overflow-hidden" },
-                        React.createElement("span", { className: "relative z-10" }, about_1.ABOUT_CONTENT.cta.label),
-                        React.createElement(about_1.ABOUT_CONTENT.cta.icon, { className: "relative z-10 group-hover:translate-x-1 transition-transform duration-300" }),
-                        React.createElement("div", { className: "absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent \n                           transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" })),
                     React.createElement("div", { className: "mt-8 p-6 bg-gradient-to-r from-gray-50 to-green-50 rounded-xl border border-green-100" },
                         React.createElement("div", { className: "flex items-start gap-4" },
                             React.createElement("div", { className: "w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0" },

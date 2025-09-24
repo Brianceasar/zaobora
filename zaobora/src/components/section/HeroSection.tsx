@@ -85,7 +85,7 @@ const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+             {/* <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <Link
                 href={HERO_CONTENT.cta.href}
                 className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 
@@ -95,7 +95,7 @@ const HeroSection = () => {
                 <span className="relative z-10">{HERO_CONTENT.cta.label}</span>
                 <HERO_CONTENT.cta.icon className="relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
                 
-                {/* Button shine effect */}
+               
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent 
                              transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
               </Link>
@@ -112,7 +112,7 @@ const HeroSection = () => {
                         d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
-            </div>
+            </div> */}
 
             {/* Trust Indicators */}
             {/* <div className="flex flex-wrap items-center gap-6 pt-8 border-t border-gray-200">

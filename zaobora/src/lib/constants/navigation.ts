@@ -1,7 +1,6 @@
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/about", label: "Who We Are" },
   { href: "/products", label: "Products" },
   {
     label: "Get Involved",
@@ -9,7 +8,7 @@ export const NAV_LINKS = [
       { href: "/get-involved/partnership", label: "Partner with us" },
       { href: "/get-involved/vacancies", label: "Vacancies" },
       { href: "/get-involved/volunteer", label: "Volunteer" },
-      { href: "/donate", label: "Donate" },
+      { href: "/get-involved/donate", label: "Donate" },
     ],
   },
   { href: "#contact-us", label: "Contact" },
