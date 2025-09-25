@@ -8,29 +8,11 @@ import {
   FaArrowRight,
   FaFilter,
   FaList,
-  FaUserGraduate,
-  FaSeedling,
-  FaCreditCard,
-  FaFlask,
-  FaChartBar,
-  FaRadio,
-  FaHandshake
 } from "react-icons/fa6";
-import { FaThLarge, FaTint } from "react-icons/fa";
-// Icon mapping for string to component
-const ICONS = {
-  FaUserGraduate,
-  FaSeedling,
-  FaCreditCard,
-  FaFlask,
-  FaChartBar,
-  FaRadio,
-  FaHandshake,
-  FaTint,
-};
+import { FaThLarge} from "react-icons/fa";
+import { ICONS } from "@/lib/constants/icons";
+
 import { SERVICES_CONTENT } from "@/lib/constants/service-list";
-import Header from "@/components/layout/header/Header";
-import Footer from "@/components/layout/footer/Footer"; 
 
 const ServicesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -78,7 +60,6 @@ const ServicesPage = () => {
   return (
     
     <div className="min-h-screen bg-white">
-      <Header/>
       {/* Hero Section */}
       <section 
         ref={heroRef}
@@ -151,7 +132,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Filters and Controls */}
-      <section className="bg-white border-b border-gray-200 sticky top-16 md:top-20 z-40">
+      <section className="bg-white border-b border-gray-200 top-16 md:top-20 z-40">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             
@@ -400,7 +381,6 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
-        <Footer/>
     </div>
   );
 };

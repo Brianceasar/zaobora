@@ -13,20 +13,8 @@ var react_1 = require("react");
 var link_1 = require("next/link");
 var fa6_1 = require("react-icons/fa6");
 var fa_1 = require("react-icons/fa");
-// Icon mapping for string to component
-var ICONS = {
-    FaUserGraduate: fa6_1.FaUserGraduate,
-    FaSeedling: fa6_1.FaSeedling,
-    FaCreditCard: fa6_1.FaCreditCard,
-    FaFlask: fa6_1.FaFlask,
-    FaChartBar: fa6_1.FaChartBar,
-    FaRadio: fa6_1.FaRadio,
-    FaHandshake: fa6_1.FaHandshake,
-    FaTint: fa_1.FaTint
-};
+var icons_1 = require("@/lib/constants/icons");
 var service_list_1 = require("@/lib/constants/service-list");
-var Header_1 = require("@/components/layout/header/Header");
-var Footer_1 = require("@/components/layout/footer/Footer");
 var ServicesPage = function () {
     var _a = react_1.useState(false), isVisible = _a[0], setIsVisible = _a[1];
     var _b = react_1.useState([]), visibleCards = _b[0], setVisibleCards = _b[1];
@@ -63,7 +51,6 @@ var ServicesPage = function () {
         });
     }, [isVisible, selectedCategory]);
     return (react_1["default"].createElement("div", { className: "min-h-screen bg-white" },
-        react_1["default"].createElement(Header_1["default"], null),
         react_1["default"].createElement("section", { ref: heroRef, className: "relative pt-20 md:pt-24 pb-16 md:pb-20 bg-gradient-to-br from-green-50 via-white to-emerald-50 overflow-hidden" },
             react_1["default"].createElement("div", { className: "absolute inset-0 overflow-hidden pointer-events-none" },
                 react_1["default"].createElement("div", { className: "absolute top-10 md:top-20 left-4 md:left-20 w-16 md:w-32 h-16 md:h-32 bg-green-200/20 rounded-full animate-pulse" }),
@@ -94,7 +81,7 @@ var ServicesPage = function () {
                         react_1["default"].createElement("div", { className: "text-center" },
                             react_1["default"].createElement("div", { className: "text-2xl md:text-3xl font-bold text-green-600" }, "5+"),
                             react_1["default"].createElement("div", { className: "text-sm md:text-base text-gray-600" }, "Years Experience")))))),
-        react_1["default"].createElement("section", { className: "bg-white border-b border-gray-200 sticky top-16 md:top-20 z-40" },
+        react_1["default"].createElement("section", { className: "bg-white border-b border-gray-200 top-16 md:top-20 z-40" },
             react_1["default"].createElement("div", { className: "container mx-auto px-4 sm:px-6 lg:px-8 py-4" },
                 react_1["default"].createElement("div", { className: "flex flex-col md:flex-row justify-between items-start md:items-center gap-4" },
                     react_1["default"].createElement("div", { className: "flex items-center gap-3 flex-wrap" },
@@ -130,7 +117,7 @@ var ServicesPage = function () {
                     react_1["default"].createElement("div", { className: "relative z-10 p-6 md:p-8" },
                         react_1["default"].createElement("div", { className: "mb-6" },
                             react_1["default"].createElement("div", { className: "relative w-16 h-16 mx-auto" },
-                                react_1["default"].createElement("div", { className: "w-16 h-16 rounded-2xl bg-gradient-to-br " + service.bgColor + " \n                                         flex items-center justify-center shadow-lg transform \n                                         group-hover:rotate-6 group-hover:scale-110 transition-all duration-500" }, service.icon && ICONS[service.icon] ? (react_1["default"].createElement(ICONS[service.icon], { className: "w-8 h-8 text-white" })) : (react_1["default"].createElement("span", { className: "text-2xl" }, service.emoji))))),
+                                react_1["default"].createElement("div", { className: "w-16 h-16 rounded-2xl bg-gradient-to-br " + service.bgColor + " \n                                         flex items-center justify-center shadow-lg transform \n                                         group-hover:rotate-6 group-hover:scale-110 transition-all duration-500" }, service.icon && icons_1.ICONS[service.icon] ? (react_1["default"].createElement(icons_1.ICONS[service.icon], { className: "w-8 h-8 text-white" })) : (react_1["default"].createElement("span", { className: "text-2xl" }, service.emoji))))),
                         react_1["default"].createElement("div", { className: "text-center mb-3" },
                             react_1["default"].createElement("span", { className: "inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium" }, service.category)),
                         react_1["default"].createElement("h3", { className: "text-xl font-bold text-gray-900 mb-4 text-center group-hover:text-green-700 \n                                   transition-colors duration-300 line-clamp-2" }, service.title),
@@ -148,7 +135,7 @@ var ServicesPage = function () {
                     react_1["default"].createElement("div", { className: "p-6 md:p-8" },
                         react_1["default"].createElement("div", { className: "grid md:grid-cols-4 gap-6 items-center" },
                             react_1["default"].createElement("div", { className: "text-center md:text-left" },
-                                react_1["default"].createElement("div", { className: "w-16 h-16 rounded-2xl bg-gradient-to-br " + service.bgColor + " \n                                         flex items-center justify-center shadow-lg mx-auto md:mx-0 mb-3 \n                                         transform group-hover:scale-110 transition-all duration-500" }, service.icon && ICONS[service.icon] ? (react_1["default"].createElement(ICONS[service.icon], { className: "w-8 h-8 text-white" })) : (react_1["default"].createElement("span", { className: "text-2xl" }, service.emoji))),
+                                react_1["default"].createElement("div", { className: "w-16 h-16 rounded-2xl bg-gradient-to-br " + service.bgColor + " \n                                         flex items-center justify-center shadow-lg mx-auto md:mx-0 mb-3 \n                                         transform group-hover:scale-110 transition-all duration-500" }, service.icon && icons_1.ICONS[service.icon] ? (react_1["default"].createElement(icons_1.ICONS[service.icon], { className: "w-8 h-8 text-white" })) : (react_1["default"].createElement("span", { className: "text-2xl" }, service.emoji))),
                                 react_1["default"].createElement("span", { className: "inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium" }, service.category)),
                             react_1["default"].createElement("div", { className: "md:col-span-2 text-center md:text-left" },
                                 react_1["default"].createElement("h3", { className: "text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-700 \n                                       transition-colors duration-300" }, service.title),
@@ -172,7 +159,6 @@ var ServicesPage = function () {
                         react_1["default"].createElement("span", null, "Get Consultation"),
                         react_1["default"].createElement(fa6_1.FaArrowRight, { className: "w-5 h-5" })),
                     react_1["default"].createElement("a", { href: "tel:+255752563361", className: "inline-flex items-center justify-center gap-3 bg-white/20 text-white border-2 border-white/30 px-8 py-4 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300" },
-                        react_1["default"].createElement("span", null, "Call Now"))))),
-        react_1["default"].createElement(Footer_1["default"], null)));
+                        react_1["default"].createElement("span", null, "Call Now")))))));
 };
 exports["default"] = ServicesPage;

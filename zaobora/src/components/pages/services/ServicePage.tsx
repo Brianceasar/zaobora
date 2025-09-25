@@ -6,8 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight, FaCheck } from "react-icons/fa6";
 import {FaQuoteLeft} from 'react-icons/fa';
-import ContactInfoSection from "@/components/section/ContactInfoSection";
-import GetInTouchSection from "@/components/section/GetInTouchSection";
+
 
 interface ServiceData {
   title: string;
@@ -172,8 +171,7 @@ export default function ServicePage({ serviceData }: { serviceData: ServiceData 
           </div>
         )}
       </section>
-        <ContactInfoSection />
-      <GetInTouchSection />
+     
     </div>
         
   );

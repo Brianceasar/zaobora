@@ -6,8 +6,6 @@ var react_1 = require("react");
 var image_1 = require("next/image");
 var link_1 = require("next/link");
 var fa6_1 = require("react-icons/fa6");
-var ContactInfoSection_1 = require("@/components/section/ContactInfoSection");
-var GetInTouchSection_1 = require("@/components/section/GetInTouchSection");
 function ServicePage(_a) {
     var serviceData = _a.serviceData;
     var _b = react_1.useState(false), isVisible = _b[0], setIsVisible = _b[1];
@@ -58,8 +56,6 @@ function ServicePage(_a) {
                 React.createElement("h3", { className: "text-2xl font-semibold text-gray-900 mb-6" }, "Key Benefits"),
                 React.createElement("ul", { className: "grid grid-cols-1 md:grid-cols-2 gap-4" }, serviceData.keyBenefits.map(function (benefit, idx) { return (React.createElement("li", { key: idx, className: "flex items-start text-gray-700 gap-3" },
                     React.createElement(fa6_1.FaCheck, { className: "text-green-600 mt-1" }),
-                    React.createElement("span", null, benefit))); }))))),
-        React.createElement(ContactInfoSection_1["default"], null),
-        React.createElement(GetInTouchSection_1["default"], null)));
+                    React.createElement("span", null, benefit))); })))))));
 }
 exports["default"] = ServicePage;
