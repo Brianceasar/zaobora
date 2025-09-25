@@ -1,11 +1,33 @@
 // src/app/services/page.tsx
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowRight, FaFilter, FaList } from "react-icons/fa6";
-import { FaThLarge } from "react-icons/fa";
+import {
+  FaArrowRight,
+  FaFilter,
+  FaList,
+  FaUserGraduate,
+  FaSeedling,
+  FaCreditCard,
+  FaFlask,
+  FaChartBar,
+  FaRadio,
+  FaHandshake
+} from "react-icons/fa6";
+import { FaThLarge, FaTint } from "react-icons/fa";
+// Icon mapping for string to component
+const ICONS = {
+  FaUserGraduate,
+  FaSeedling,
+  FaCreditCard,
+  FaFlask,
+  FaChartBar,
+  FaRadio,
+  FaHandshake,
+  FaTint,
+};
 import { SERVICES_CONTENT } from "@/lib/constants/service-list";
 import Header from "@/components/layout/header/Header";
 import Footer from "@/components/layout/footer/Footer"; 
@@ -30,13 +52,6 @@ const ServicesPage = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          
-          // Stagger card animations
-          filteredServices.forEach((_, index) => {
-            setTimeout(() => {
-              setVisibleCards(prev => [...prev, index]);
-            }, index * 150);
-          });
         }
       },
       { threshold: 0.1 }
@@ -47,19 +62,18 @@ const ServicesPage = () => {
     }
 
     return () => observer.disconnect();
-  }, [filteredServices]);
+  }, []);
 
-  // Reset animations when filter changes
+  // Animate cards when visible or category changes
   useEffect(() => {
+    if (!isVisible) return;
     setVisibleCards([]);
-    setTimeout(() => {
-      filteredServices.forEach((_, index) => {
-        setTimeout(() => {
-          setVisibleCards(prev => [...prev, index]);
-        }, index * 100);
-      });
-    }, 100);
-  }, [selectedCategory, filteredServices]);
+    filteredServices.forEach((_, index) => {
+      setTimeout(() => {
+        setVisibleCards(prev => [...prev, index]);
+      }, index * 100);
+    });
+  }, [isVisible, selectedCategory]);
 
   return (
     
@@ -233,8 +247,8 @@ const ServicesPage = () => {
                           <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.bgColor} 
                                          flex items-center justify-center shadow-lg transform 
                                          group-hover:rotate-6 group-hover:scale-110 transition-all duration-500`}>
-                            {service.icon ? (
-                              <service.icon className="w-8 h-8 text-white" />
+                            {service.icon && ICONS[service.icon as keyof typeof ICONS] ? (
+                              React.createElement(ICONS[service.icon as keyof typeof ICONS], { className: "w-8 h-8 text-white" })
                             ) : (
                               <span className="text-2xl">{service.emoji}</span>
                             )}
@@ -301,8 +315,8 @@ const ServicesPage = () => {
                           <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.bgColor} 
                                          flex items-center justify-center shadow-lg mx-auto md:mx-0 mb-3 
                                          transform group-hover:scale-110 transition-all duration-500`}>
-                            {service.icon ? (
-                              <service.icon className="w-8 h-8 text-white" />
+                            {service.icon && ICONS[service.icon as keyof typeof ICONS] ? (
+                              React.createElement(ICONS[service.icon as keyof typeof ICONS], { className: "w-8 h-8 text-white" })
                             ) : (
                               <span className="text-2xl">{service.emoji}</span>
                             )}
