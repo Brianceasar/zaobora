@@ -16,7 +16,7 @@ export const SERVICES_CONTENT: ServiceSectionType = {
   subtitle: "Our Services",
   title: "Integrated Agricultural Solutions",
   description: "We provide comprehensive agricultural solutions that support farmers from knowledge and training to inputs, finance, technology, and research. Our goal is to improve productivity, profitability, and sustainability while making farmers more resilient and prosperous.",
-  backgroundImage: "/assets/img/service/tree-background.png",
+  backgroundImage: "/img/service/tree-background.png",
   cards: [
     {
       id: "farmer-advisory",
