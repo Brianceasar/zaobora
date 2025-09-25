@@ -6,6 +6,7 @@ import "./globals.css";
 import Header from "@/components/layout/header/Header";
 import Footer from "@/components/layout/footer/Footer";
 import ContactInfoSection from "@/components/section/ContactInfoSection"; 
+import GetInTouchSection from "@/components/section/GetInTouchSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,9 +27,8 @@ export default function RootLayout({
 
         {/* Shared page container */}
         <main className="min-h-screen">{children}</main>
-
-        {/* If Contact is global, keep it here */}
         <ContactInfoSection />
+        <GetInTouchSection />
         <Footer />
       </body>
     </html>
