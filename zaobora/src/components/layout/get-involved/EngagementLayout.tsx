@@ -2,10 +2,7 @@
 
 import { ReactNode } from "react";
 import Link from "next/link";
-import Header from "@/components/layout/header/Header";
-import Footer from "@/components/layout/footer/Footer";
-import ContactInfoSection from "@/components/section/ContactInfoSection";
-import GetInTouchSection from "@/components/section/GetInTouchSection";
+
 
 interface EngagementLayoutProps {
   breadcrumbLabel: string;   // e.g. "Volunteer"
@@ -28,7 +25,6 @@ export default function EngagementLayout({
 }: EngagementLayoutProps) {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
 
       {/* Hero */}
       <section
@@ -57,10 +53,6 @@ export default function EngagementLayout({
       {/* Page Content */}
       <main>{children}</main>
 
-      {/* Shared sections */}
-      <ContactInfoSection />
-      <GetInTouchSection />
-      <Footer />
     </div>
   );
 }

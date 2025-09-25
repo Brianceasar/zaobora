@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
-import { FaLocationDot, FaPhone, FaEnvelope, FaArrowRight, FaCheck, FaSpinner } from 'react-icons/fa6';
+import { FaArrowRight, FaCheck, FaSpinner } from 'react-icons/fa6';
 
 const GetInTouchSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,7 +13,7 @@ const GetInTouchSection = () => {
     subject: '',
     message: ''
   });
-  
+   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -33,16 +33,64 @@ const GetInTouchSection = () => {
     return () => observer.disconnect();
   }, []);
 
+  const validateForm = () => {
+    const newErrors: { [key: string]: string } = {};
+
+    if (!formData.firstName.trim()) {
+      newErrors.firstName = "Full name is required.";
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required.";
+    } else {
+      const validTLDs = [
+        "com", "org", "net", "edu", "gov", "mil", "int", "co", "io", "ai", "biz", "info", "me", "us", "uk", "ca", "de", "fr", "jp", "au", "in", "za", "ng", "tz"
+      ];
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+      if (!emailRegex.test(formData.email.trim())) {
+        newErrors.email = "Please enter a valid email address.";
+      } else {
+        const domain = formData.email.split('@')[1];
+        const tld = domain.split('.').pop();
+        if (!tld || !validTLDs.includes(tld.toLowerCase())) {
+          newErrors.email = "Please enter an email with a valid domain.";
+        }
+        if (/^(test|example|email|localhost)\./i.test(domain)) {
+          newErrors.email = "Please enter an email with a valid domain.";
+        }
+      }
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message cannot be empty.";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
+
+    // clear error when typing
+    if (errors[name]) {
+      setErrors(prev => {
+        const updated = { ...prev };
+        delete updated[name];
+        return updated;
+      });
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!validateForm()) return;
+
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
@@ -65,7 +113,7 @@ const GetInTouchSection = () => {
       } else {
         setSubmitStatus('error');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -175,10 +223,12 @@ const GetInTouchSection = () => {
                       onChange={handleInputChange}
                       placeholder="Enter your name"
                       required
-                      className="w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 
+                      className={`w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 
                                placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 
-                               focus:border-green-500 transition-all duration-300"
+                               focus:border-green-500 transition-all duration-300
+                               ${errors.firstName ? "border-red-500 focus:ring-red-500" : "bg-gray-50 border-gray-200 focus:ring-green-500 focus:border-green-500"}`}
                     />
+                    {errors.firstName && <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>}
                   </div>
                   
                   <div>
@@ -193,10 +243,12 @@ const GetInTouchSection = () => {
                       onChange={handleInputChange}
                       placeholder="Enter your email"
                       required
-                      className="w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 
+                      className={`w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 
                                placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 
-                               focus:border-green-500 transition-all duration-300"
+                               focus:border-green-500 transition-all duration-300
+                                ${errors.email ? "border-red-500 focus:ring-red-500" : "bg-gray-50 border-gray-200 focus:ring-green-500 focus:border-green-500"}`}
                     />
+                    {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                   </div>
                 </div>
 
@@ -231,16 +283,18 @@ const GetInTouchSection = () => {
                     placeholder="Tell us how we can help..."
                     required
                     rows={5}
-                    className="w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 
+                    className={`w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 
                              placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 
-                             focus:border-green-500 transition-all duration-300 resize-none"
+                             focus:border-green-500 transition-all duration-300 resize-none
+                             ${errors.message ? "border-red-500 focus:ring-red-500" : "bg-gray-50 border-gray-200 focus:ring-green-500 focus:border-green-500"}`}
                   />
+                  {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
                 </div>
 
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  disabled={isSubmitting}
+                  disabled={isSubmitting || Object.keys(errors).length > 0}
                   className="group w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white 
                            font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl 
                            transform hover:scale-[1.02] transition-all duration-300 

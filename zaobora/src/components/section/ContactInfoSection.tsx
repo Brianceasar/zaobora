@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
-import { FaLocationDot, FaPhone, FaEnvelope, FaArrowRight, FaCheck, FaSpinner } from 'react-icons/fa6';
+import { FaLocationDot, FaPhone, FaEnvelope, FaArrowRight } from 'react-icons/fa6';
 
 
 const ContactInfoSection = () => {
@@ -62,7 +62,7 @@ const ContactInfoSection = () => {
     }
 
     return () => observer.disconnect();
-  }, []);
+  });
 
   return (
     <section 

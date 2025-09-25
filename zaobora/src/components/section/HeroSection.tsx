@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import { useState, useEffect } from "react";
 import { HERO_CONTENT } from "@/lib/constants/hero";
 
@@ -216,16 +216,16 @@ const HeroSection = () => {
   );
 };
 
-// Add custom CSS for animations
-const styles = `
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-  }
+
+// const styles = `
+//   @keyframes float {
+//     0%, 100% { transform: translateY(0px); }
+//     50% { transform: translateY(-10px); }
+//   }
   
-  .animate-float {
-    animation: float 3s ease-in-out infinite;
-  }
-`;
+//   .animate-float {
+//     animation: float 3s ease-in-out infinite;
+//   }
+// `;
 
 export default HeroSection;

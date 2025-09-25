@@ -51,10 +51,6 @@ exports.__esModule = true;
 var react_1 = require("react");
 var link_1 = require("next/link");
 var fa6_1 = require("react-icons/fa6");
-var Header_1 = require("@/components/layout/header/Header");
-var Footer_1 = require("@/components/layout/footer/Footer");
-var ContactInfoSection_1 = require("@/components/section/ContactInfoSection");
-var GetInTouchSection_1 = require("@/components/section/GetInTouchSection");
 var VacanciesPage = function () {
     var _a = react_1.useState(false), isSubmitting = _a[0], setIsSubmitting = _a[1];
     var _b = react_1.useState("idle"), submitStatus = _b[0], setSubmitStatus = _b[1];
@@ -111,7 +107,6 @@ var VacanciesPage = function () {
         });
     }); };
     return (React.createElement("div", { className: "min-h-screen bg-white" },
-        React.createElement(Header_1["default"], null),
         React.createElement("section", { className: "relative pt-20 md:pt-24 pb-12 md:pb-16 bg-gradient-to-br from-green-50 via-white to-green-100" },
             React.createElement("div", { className: "container mx-auto px-4 sm:px-6 lg:px-8 text-center" },
                 React.createElement("nav", { className: "flex justify-center gap-2 text-sm text-gray-600 mb-6" },
@@ -148,9 +143,6 @@ var VacanciesPage = function () {
                             " Submitting...") : React.createElement(React.Fragment, null,
                             "Apply Now ",
                             React.createElement(fa6_1.FaArrowRight, null))))))),
-        React.createElement(ContactInfoSection_1["default"], null),
-        React.createElement(GetInTouchSection_1["default"], null),
-        React.createElement(Footer_1["default"], null),
         showModal && (React.createElement("div", { className: "fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" },
             React.createElement("div", { className: "bg-white rounded-2xl p-8 max-w-md w-full text-center" },
                 React.createElement(fa6_1.FaCheck, { className: "w-10 h-10 text-green-600 mx-auto mb-4" }),

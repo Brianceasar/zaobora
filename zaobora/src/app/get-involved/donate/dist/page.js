@@ -52,23 +52,20 @@ var react_1 = require("react");
 var image_1 = require("next/image");
 var link_1 = require("next/link");
 var fa6_1 = require("react-icons/fa6");
-var Header_1 = require("@/components/layout/header/Header");
-var Footer_1 = require("@/components/layout/footer/Footer");
-var ContactInfoSection_1 = require("@/components/section/ContactInfoSection");
-var GetInTouchSection_1 = require("@/components/section/GetInTouchSection");
 var DonatePage = function () {
-    var _a = react_1.useState("$"), selectedCurrency = _a[0], setSelectedCurrency = _a[1];
-    var _b = react_1.useState("Planting trees"), selectedPurpose = _b[0], setSelectedPurpose = _b[1];
-    var _c = react_1.useState(""), donationAmount = _c[0], setDonationAmount = _c[1];
-    var _d = react_1.useState(false), isSubmitting = _d[0], setIsSubmitting = _d[1];
-    var _e = react_1.useState('idle'), submitStatus = _e[0], setSubmitStatus = _e[1];
-    var _f = react_1.useState(false), showModal = _f[0], setShowModal = _f[1];
-    var _g = react_1.useState({
+    var _a = react_1.useState({}), errors = _a[0], setErrors = _a[1];
+    var _b = react_1.useState("$"), selectedCurrency = _b[0], setSelectedCurrency = _b[1];
+    var _c = react_1.useState("Planting trees"), selectedPurpose = _c[0], setSelectedPurpose = _c[1];
+    var _d = react_1.useState(""), donationAmount = _d[0], setDonationAmount = _d[1];
+    var _e = react_1.useState(false), isSubmitting = _e[0], setIsSubmitting = _e[1];
+    var _f = react_1.useState('idle'), submitStatus = _f[0], setSubmitStatus = _f[1];
+    var _g = react_1.useState(false), showModal = _g[0], setShowModal = _g[1];
+    var _h = react_1.useState({
         firstName: "",
         lastName: "",
         email: "",
         message: ""
-    }), formData = _g[0], setFormData = _g[1];
+    }), formData = _h[0], setFormData = _h[1];
     var currencies = [
         { symbol: "$", label: "USD" },
         { symbol: "€", label: "Euro" },
@@ -96,17 +93,47 @@ var DonatePage = function () {
         });
     };
     var handleSubmit = function (e) { return __awaiter(void 0, void 0, void 0, function () {
-        var donationData, response, error_1;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
+        var validTLDs, emailError, emailRegex, domain, tld, donationData, response, _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
                 case 0:
                     e.preventDefault();
+                    validTLDs = [
+                        "com", "org", "net", "edu", "gov", "mil", "int", "co", "io", "ai", "biz", "info", "me", "us", "uk", "ca", "de", "fr", "jp", "au", "in", "za", "ng", "tz"
+                    ];
+                    emailError = "";
+                    if (!formData.email.trim()) {
+                        emailError = "Email is required.";
+                    }
+                    else {
+                        emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+                        if (!emailRegex.test(formData.email.trim())) {
+                            emailError = "Please enter a valid email address.";
+                        }
+                        else {
+                            domain = formData.email.split('@')[1];
+                            tld = domain.split('.').pop();
+                            if (!tld || !validTLDs.includes(tld.toLowerCase())) {
+                                emailError = "Please enter an email with a valid domain.";
+                            }
+                            if (/^(test|example|email|localhost)\./i.test(domain)) {
+                                emailError = "Please enter an email with a valid domain.";
+                            }
+                        }
+                    }
+                    if (emailError) {
+                        setErrors({ email: emailError });
+                        return [2 /*return*/];
+                    }
+                    else {
+                        setErrors({});
+                    }
                     setIsSubmitting(true);
                     setSubmitStatus('idle');
                     donationData = __assign(__assign({}, formData), { amount: donationAmount, currency: selectedCurrency, donationPurpose: selectedPurpose });
-                    _a.label = 1;
+                    _b.label = 1;
                 case 1:
-                    _a.trys.push([1, 3, 4, 5]);
+                    _b.trys.push([1, 3, 4, 5]);
                     return [4 /*yield*/, fetch('https://formspree.io/f/xwpklkgl', {
                             method: 'POST',
                             headers: {
@@ -116,7 +143,7 @@ var DonatePage = function () {
                             body: JSON.stringify(donationData)
                         })];
                 case 2:
-                    response = _a.sent();
+                    response = _b.sent();
                     if (response.ok) {
                         setSubmitStatus('success');
                         setShowModal(true);
@@ -130,7 +157,7 @@ var DonatePage = function () {
                     }
                     return [3 /*break*/, 5];
                 case 3:
-                    error_1 = _a.sent();
+                    _a = _b.sent();
                     setSubmitStatus('error');
                     return [3 /*break*/, 5];
                 case 4:
@@ -141,7 +168,6 @@ var DonatePage = function () {
         });
     }); };
     return (React.createElement("div", { className: "min-h-screen bg-white" },
-        React.createElement(Header_1["default"], null),
         React.createElement("section", { className: "relative pt-20 md:pt-24 pb-12 md:pb-16 bg-gradient-to-br from-green-50 via-white to-emerald-50 overflow-hidden" },
             React.createElement("div", { className: "absolute inset-0 overflow-hidden pointer-events-none" },
                 React.createElement("div", { className: "absolute top-20 left-20 w-32 h-32 bg-green-200/20 rounded-full animate-pulse" }),
@@ -193,12 +219,12 @@ var DonatePage = function () {
                     React.createElement("form", { onSubmit: handleSubmit, className: "bg-white rounded-2xl shadow-lg p-8 md:p-12" },
                         React.createElement("div", { className: "mb-8" },
                             React.createElement("h3", { className: "text-xl font-semibold text-green-600 mb-4" }, "How Much Would You Like To Donate?"),
-                            React.createElement("div", { className: "flex gap-3 mb-4" }, currencies.map(function (currency) { return (React.createElement("button", { key: currency.symbol, type: "button", onClick: function () { return setSelectedCurrency(currency.symbol); }, className: "px-4 py-2 rounded-lg font-medium transition-all duration-300 " + (selectedCurrency === currency.symbol
+                            React.createElement("div", { className: "flex gap-3 mb-4" }, currencies.map(function (currency) { return (React.createElement("button", { key: currency.symbol, type: "button", onClick: function () { return setSelectedCurrency(currency.symbol); }, className: "px-4 py-2 rounded-lg font-medium transition-all  duration-300 " + (selectedCurrency === currency.symbol
                                     ? 'bg-green-600 text-white'
                                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200') }, currency.label)); })),
                             React.createElement("div", { className: "flex" },
                                 React.createElement("span", { className: "inline-flex items-center px-4 text-gray-600 bg-gray-100 border border-r-0 border-gray-300 rounded-l-lg" }, selectedCurrency),
-                                React.createElement("input", { type: "number", value: donationAmount, onChange: function (e) { return setDonationAmount(e.target.value); }, placeholder: "Amount", required: true, min: "1", className: "flex-1 px-4 py-3 border border-gray-300 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500" }))),
+                                React.createElement("input", { type: "number", value: donationAmount, onChange: function (e) { return setDonationAmount(e.target.value); }, placeholder: "Amount", required: true, min: "1", className: "flex-1 px-4 py-3 border text-gray-600  border-gray-300 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500" }))),
                         React.createElement("div", { className: "mb-8" },
                             React.createElement("h3", { className: "text-xl font-semibold text-green-600 mb-4" }, "Choose where you'd like your donation to go"),
                             React.createElement("div", { className: "grid sm:grid-cols-2 gap-4" }, donationPurposes.map(function (purpose) { return (React.createElement("button", { key: purpose.id, type: "button", onClick: function () { return setSelectedPurpose(purpose.label); }, className: "p-4 rounded-xl text-left transition-all duration-300 " + (selectedPurpose === purpose.label
@@ -208,19 +234,18 @@ var DonatePage = function () {
                         React.createElement("div", { className: "mb-8" },
                             React.createElement("h3", { className: "text-xl font-semibold text-green-600 mb-4" }, "Personal Info"),
                             React.createElement("div", { className: "grid sm:grid-cols-2 gap-4 mb-4" },
-                                React.createElement("input", { type: "text", name: "firstName", value: formData.firstName, onChange: handleInputChange, placeholder: "Your First Name", className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500" }),
-                                React.createElement("input", { type: "text", name: "lastName", value: formData.lastName, onChange: handleInputChange, placeholder: "Your Last Name", className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500" })),
-                            React.createElement("input", { type: "email", name: "email", value: formData.email, onChange: handleInputChange, placeholder: "Your Email Address", className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500" })),
+                                React.createElement("input", { type: "text", name: "firstName", value: formData.firstName, onChange: handleInputChange, placeholder: "Your First Name", className: "px-4 py-3 border text-gray-600 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500" }),
+                                React.createElement("input", { type: "text", name: "lastName", value: formData.lastName, onChange: handleInputChange, placeholder: "Your Last Name", className: "px-4 py-3 text-gray-600 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500" })),
+                            React.createElement("input", { type: "email", name: "email", value: formData.email, onChange: handleInputChange, placeholder: "Your Email Address", className: "w-full text-gray-600 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 " + (errors.email ? 'border-red-500 focus:ring-red-500' : '') }),
+                            errors.email && React.createElement("p", { className: "text-red-500 text-sm mt-1" }, errors.email)),
                         React.createElement("div", { className: "mb-8" },
                             React.createElement("h3", { className: "text-xl font-semibold text-green-600 mb-4" }, "Message"),
-                            React.createElement("textarea", { name: "message", value: formData.message, onChange: handleInputChange, placeholder: "Leave a message (optional)", rows: 4, className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 resize-none" })),
+                            React.createElement("textarea", { name: "message", value: formData.message, onChange: handleInputChange, placeholder: "Leave a message (optional)", rows: 4, className: "w-full text-gray-600 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 resize-none" })),
                         React.createElement("button", { type: "submit", disabled: isSubmitting || !donationAmount, className: "w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-3" }, isSubmitting ? (React.createElement(React.Fragment, null,
                             React.createElement(fa6_1.FaSpinner, { className: "w-5 h-5 animate-spin" }),
                             React.createElement("span", null, "Processing Donation..."))) : (React.createElement(React.Fragment, null,
-                            React.createElement("span", null, "Send Donation"),
+                            React.createElement("span", null, "Submit"),
                             React.createElement(fa6_1.FaArrowRight, { className: "w-5 h-5" })))))))),
-        React.createElement(ContactInfoSection_1["default"], null),
-        React.createElement(GetInTouchSection_1["default"], null),
         showModal && (React.createElement("div", { className: "fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" },
             React.createElement("div", { className: "bg-white rounded-2xl p-8 max-w-md w-full mx-4" },
                 React.createElement("div", { className: "text-center" },
@@ -228,7 +253,6 @@ var DonatePage = function () {
                         React.createElement(fa6_1.FaCheck, { className: "w-8 h-8 text-green-600" })),
                     React.createElement("h3", { className: "text-2xl font-bold text-gray-900 mb-4" }, "Thank You!"),
                     React.createElement("p", { className: "text-gray-600 mb-6" }, "Your donation has been submitted. Thank you for supporting our mission! Our team will get back to you shortly with next steps."),
-                    React.createElement("button", { onClick: function () { return setShowModal(false); }, className: "w-full bg-green-600 text-white py-3 px-6 rounded-xl font-semibold hover:bg-green-700 transition-colors duration-300" }, "Close"))))),
-        React.createElement(Footer_1["default"], null)));
+                    React.createElement("button", { onClick: function () { return setShowModal(false); }, className: "w-full bg-green-600 text-white py-3 px-6 rounded-xl font-semibold hover:bg-green-700 transition-colors duration-300" }, "Close")))))));
 };
 exports["default"] = DonatePage;

@@ -3,10 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FaArrowRight, FaSpinner, FaCheck } from "react-icons/fa6";
-import Header from "@/components/layout/header/Header";
-import Footer from "@/components/layout/footer/Footer";
-import ContactInfoSection from "@/components/section/ContactInfoSection";
-import GetInTouchSection from "@/components/section/GetInTouchSection";
+
 
 const VolunteerPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -52,7 +49,6 @@ const VolunteerPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
 
       {/* Hero */}
   <section className="relative pt-20 md:pt-24 pb-12 md:pb-16 bg-gradient-to-br from-green-50 via-white to-green-100">
@@ -164,9 +160,6 @@ const VolunteerPage = () => {
         </div>
       </section>
 
-      <ContactInfoSection />
-      <GetInTouchSection />
-      <Footer />
 
       {/* Modal */}
       {showModal && (

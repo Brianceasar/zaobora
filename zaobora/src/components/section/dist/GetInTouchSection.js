@@ -60,6 +60,7 @@ var GetInTouchSection = function () {
         subject: '',
         message: ''
     }), formData = _d[0], setFormData = _d[1];
+    var _e = react_1.useState({}), errors = _e[0], setErrors = _e[1];
     var sectionRef = react_1.useRef(null);
     react_1.useEffect(function () {
         var observer = new IntersectionObserver(function (_a) {
@@ -73,24 +74,67 @@ var GetInTouchSection = function () {
         }
         return function () { return observer.disconnect(); };
     }, []);
+    var validateForm = function () {
+        var newErrors = {};
+        if (!formData.firstName.trim()) {
+            newErrors.firstName = "Full name is required.";
+        }
+        if (!formData.email.trim()) {
+            newErrors.email = "Email is required.";
+        }
+        else {
+            var validTLDs = [
+                "com", "org", "net", "edu", "gov", "mil", "int", "co", "io", "ai", "biz", "info", "me", "us", "uk", "ca", "de", "fr", "jp", "au", "in", "za", "ng", "tz"
+            ];
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+            if (!emailRegex.test(formData.email.trim())) {
+                newErrors.email = "Please enter a valid email address.";
+            }
+            else {
+                var domain = formData.email.split('@')[1];
+                var tld = domain.split('.').pop();
+                if (!tld || !validTLDs.includes(tld.toLowerCase())) {
+                    newErrors.email = "Please enter an email with a valid domain.";
+                }
+                if (/^(test|example|email|localhost)\./i.test(domain)) {
+                    newErrors.email = "Please enter an email with a valid domain.";
+                }
+            }
+        }
+        if (!formData.message.trim()) {
+            newErrors.message = "Message cannot be empty.";
+        }
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
     var handleInputChange = function (e) {
         var _a = e.target, name = _a.name, value = _a.value;
         setFormData(function (prev) {
             var _a;
             return (__assign(__assign({}, prev), (_a = {}, _a[name] = value, _a)));
         });
+        // clear error when typing
+        if (errors[name]) {
+            setErrors(function (prev) {
+                var updated = __assign({}, prev);
+                delete updated[name];
+                return updated;
+            });
+        }
     };
     var handleSubmit = function (e) { return __awaiter(void 0, void 0, void 0, function () {
-        var response, error_1;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
+        var response, _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
                 case 0:
                     e.preventDefault();
+                    if (!validateForm())
+                        return [2 /*return*/];
                     setIsSubmitting(true);
                     setSubmitStatus('idle');
-                    _a.label = 1;
+                    _b.label = 1;
                 case 1:
-                    _a.trys.push([1, 3, 4, 5]);
+                    _b.trys.push([1, 3, 4, 5]);
                     return [4 /*yield*/, fetch('https://formspree.io/f/mdkoebpr', {
                             method: 'POST',
                             headers: {
@@ -100,7 +144,7 @@ var GetInTouchSection = function () {
                             body: JSON.stringify(formData)
                         })];
                 case 2:
-                    response = _a.sent();
+                    response = _b.sent();
                     if (response.ok) {
                         setSubmitStatus('success');
                         setFormData({ firstName: '', email: '', subject: '', message: '' });
@@ -112,7 +156,7 @@ var GetInTouchSection = function () {
                     }
                     return [3 /*break*/, 5];
                 case 3:
-                    error_1 = _a.sent();
+                    _a = _b.sent();
                     setSubmitStatus('error');
                     return [3 /*break*/, 5];
                 case 4:
@@ -164,17 +208,20 @@ var GetInTouchSection = function () {
                             React.createElement("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6" },
                                 React.createElement("div", null,
                                     React.createElement("label", { htmlFor: "firstName", className: "block text-sm font-medium text-gray-700 mb-2" }, "Full Name *"),
-                                    React.createElement("input", { type: "text", name: "firstName", id: "firstName", value: formData.firstName, onChange: handleInputChange, placeholder: "Enter your name", required: true, className: "w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 \n                               placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 \n                               focus:border-green-500 transition-all duration-300" })),
+                                    React.createElement("input", { type: "text", name: "firstName", id: "firstName", value: formData.firstName, onChange: handleInputChange, placeholder: "Enter your name", required: true, className: "w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 \n                               placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 \n                               focus:border-green-500 transition-all duration-300\n                               " + (errors.firstName ? "border-red-500 focus:ring-red-500" : "bg-gray-50 border-gray-200 focus:ring-green-500 focus:border-green-500") }),
+                                    errors.firstName && React.createElement("p", { className: "text-red-500 text-sm mt-1" }, errors.firstName)),
                                 React.createElement("div", null,
                                     React.createElement("label", { htmlFor: "email", className: "block text-sm font-medium text-gray-700 mb-2" }, "Email Address *"),
-                                    React.createElement("input", { type: "email", name: "email", id: "email", value: formData.email, onChange: handleInputChange, placeholder: "Enter your email", required: true, className: "w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 \n                               placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 \n                               focus:border-green-500 transition-all duration-300" }))),
+                                    React.createElement("input", { type: "email", name: "email", id: "email", value: formData.email, onChange: handleInputChange, placeholder: "Enter your email", required: true, className: "w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 \n                               placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 \n                               focus:border-green-500 transition-all duration-300\n                                " + (errors.email ? "border-red-500 focus:ring-red-500" : "bg-gray-50 border-gray-200 focus:ring-green-500 focus:border-green-500") }),
+                                    errors.email && React.createElement("p", { className: "text-red-500 text-sm mt-1" }, errors.email))),
                             React.createElement("div", null,
                                 React.createElement("label", { htmlFor: "subject", className: "block text-sm font-medium text-gray-700 mb-2" }, "Subject"),
                                 React.createElement("input", { type: "text", name: "subject", id: "subject", value: formData.subject, onChange: handleInputChange, placeholder: "What's this about?", className: "w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 \n                             placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 \n                             focus:border-green-500 transition-all duration-300" })),
                             React.createElement("div", null,
                                 React.createElement("label", { htmlFor: "message", className: "block text-sm font-medium text-gray-700 mb-2" }, "Message *"),
-                                React.createElement("textarea", { name: "message", id: "message", value: formData.message, onChange: handleInputChange, placeholder: "Tell us how we can help...", required: true, rows: 5, className: "w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 \n                             placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 \n                             focus:border-green-500 transition-all duration-300 resize-none" })),
-                            React.createElement("button", { type: "submit", disabled: isSubmitting, className: "group w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white \n                           font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl \n                           transform hover:scale-[1.02] transition-all duration-300 \n                           disabled:opacity-50 disabled:cursor-not-allowed \n                           disabled:transform-none flex items-center justify-center gap-3" }, isSubmitting ? (React.createElement(React.Fragment, null,
+                                React.createElement("textarea", { name: "message", id: "message", value: formData.message, onChange: handleInputChange, placeholder: "Tell us how we can help...", required: true, rows: 5, className: "w-full p-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-800 \n                             placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 \n                             focus:border-green-500 transition-all duration-300 resize-none\n                             " + (errors.message ? "border-red-500 focus:ring-red-500" : "bg-gray-50 border-gray-200 focus:ring-green-500 focus:border-green-500") }),
+                                errors.message && React.createElement("p", { className: "text-red-500 text-sm mt-1" }, errors.message)),
+                            React.createElement("button", { type: "submit", disabled: isSubmitting || Object.keys(errors).length > 0, className: "group w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white \n                           font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl \n                           transform hover:scale-[1.02] transition-all duration-300 \n                           disabled:opacity-50 disabled:cursor-not-allowed \n                           disabled:transform-none flex items-center justify-center gap-3" }, isSubmitting ? (React.createElement(React.Fragment, null,
                                 React.createElement(fa6_1.FaSpinner, { className: "w-5 h-5 animate-spin" }),
                                 React.createElement("span", null, "Sending Message..."))) : (React.createElement(React.Fragment, null,
                                 React.createElement("span", null, "Send Message"),

@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import {
   FaArrowRight,
@@ -55,7 +55,7 @@ const ServicesPage = () => {
         setVisibleCards(prev => [...prev, index]);
       }, index * 100);
     });
-  }, [isVisible, selectedCategory]);
+  }, [isVisible, selectedCategory, filteredServices]);
 
   return (
     

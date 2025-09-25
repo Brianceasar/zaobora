@@ -49,7 +49,7 @@ export default function ProductsPage() {
   useEffect(() => {
     setVisibleCards([]); // reset
 
-    let timeouts: NodeJS.Timeout[] = [];
+    const timeouts: NodeJS.Timeout[] = [];
     filteredProducts.forEach((_, index) => {
       const t = setTimeout(() => {
         setVisibleCards((prev) => [...prev, index]);
