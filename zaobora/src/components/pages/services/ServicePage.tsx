@@ -115,7 +115,7 @@ export default function ServicePage({ serviceData }: { serviceData: ServiceData 
             >
               <div className="relative">
                 <Image
-                  src="/assets/img/service/farmer-training.jpg"
+                  src="/img/service/farmer-training.jpg"
                   alt={serviceData.title}
                   width={600}
                   height={400}

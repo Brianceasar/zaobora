@@ -41,7 +41,7 @@ exports.SERVICES_CONTENT = {
                 "Crop Protection Products",
                 "Timely Supply Chain"
             ],
-            bgColor: "from-emerald-600 to-green-600",
+            bgColor: "from-green-500 to-emerald-500",
             category: "Input Supply"
         },
         {
@@ -59,7 +59,7 @@ exports.SERVICES_CONTENT = {
                 "Farmer Profiling for Risk Reduction",
                 "Financial Literacy Training"
             ],
-            bgColor: "from-blue-500 to-green-500",
+            bgColor: "from-green-500 to-emerald-500",
             category: "Finance & Credit"
         },
         {
@@ -77,7 +77,7 @@ exports.SERVICES_CONTENT = {
                 "Soil Improvement Recommendations",
                 "Environmental Protection Guidance"
             ],
-            bgColor: "from-orange-500 to-yellow-500",
+            bgColor: "from-green-500 to-emerald-500",
             category: "Soil Management"
         },
         {
@@ -95,7 +95,7 @@ exports.SERVICES_CONTENT = {
                 "Water Use Optimization",
                 "Operation & Maintenance Services"
             ],
-            bgColor: "from-cyan-500 to-blue-500",
+            bgColor: "from-green-500 to-emerald-500",
             category: "Water Management"
         },
         {
@@ -113,7 +113,7 @@ exports.SERVICES_CONTENT = {
                 "Financial & Credit Analysis",
                 "On-Field Experiments & Testing"
             ],
-            bgColor: "from-purple-500 to-indigo-500",
+            bgColor: "from-green-500 to-emerald-500",
             category: "Research & Analytics"
         },
         {
@@ -131,7 +131,7 @@ exports.SERVICES_CONTENT = {
                 "Agro-Dealer Training",
                 "Localized Exhibitions & Events"
             ],
-            bgColor: "from-red-500 to-pink-500",
+            bgColor: "from-green-500 to-emerald-500",
             category: "Information & Communication"
         },
         {
@@ -149,7 +149,7 @@ exports.SERVICES_CONTENT = {
                 "Day-to-day Farm Management",
                 "Southern Highlands Expertise"
             ],
-            bgColor: "from-emerald-600 to-teal-600",
+            bgColor: "from-green-500 to-emerald-500",
             category: "Investment & Management"
         }
     ]

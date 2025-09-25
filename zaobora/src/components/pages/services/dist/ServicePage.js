@@ -40,7 +40,7 @@ function ServicePage(_a) {
                         React.createElement("p", { className: "text-xl text-gray-600 mb-8 leading-relaxed" }, serviceData.shortDescription)),
                     React.createElement("div", { className: "transform transition-all duration-1000 delay-300 " + (isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0") },
                         React.createElement("div", { className: "relative" },
-                            React.createElement(image_1["default"], { src: "/assets/img/service/farmer-training.jpg", alt: serviceData.title, width: 600, height: 400, className: "rounded-2xl shadow-2xl" })))))),
+                            React.createElement(image_1["default"], { src: "/img/service/farmer-training.jpg", alt: serviceData.title, width: 600, height: 400, className: "rounded-2xl shadow-2xl" })))))),
         React.createElement("section", { id: "details", className: "py-20 container mx-auto px-4 lg:px-6" },
             React.createElement("div", { className: "max-w-4xl  mb-12 text-left" },
                 React.createElement("h2", { className: "text-3xl font-bold text-gray-900 mb-6 text-left" }, "Overview"),

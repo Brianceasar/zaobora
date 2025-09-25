@@ -19,7 +19,7 @@ interface ServiceCardProps {
     title: string;
     description: string;
     bgColor: string;
-    icon: string; // Add icon prop
+    icon: string; 
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ href, title, description, bgColor, icon }) => {

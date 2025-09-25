@@ -33,7 +33,7 @@ export const SERVICES_CONTENT: ServiceSectionType = {
         "Capacity-Building Workshops",
         "Climate-Smart & Agroecological Practices"
       ],
-      bgColor: "from-green-500 to-emerald-500",
+  bgColor: "from-green-500 to-emerald-500",
       category: "Training & Education"
     },
     {
@@ -51,7 +51,7 @@ export const SERVICES_CONTENT: ServiceSectionType = {
         "Crop Protection Products",
         "Timely Supply Chain"
       ],
-      bgColor: "from-emerald-600 to-green-600",
+  bgColor: "from-green-500 to-emerald-500",
       category: "Input Supply"
     },
     {
@@ -69,7 +69,7 @@ export const SERVICES_CONTENT: ServiceSectionType = {
         "Farmer Profiling for Risk Reduction",
         "Financial Literacy Training"
       ],
-      bgColor: "from-blue-500 to-green-500",
+  bgColor: "from-green-500 to-emerald-500",
       category: "Finance & Credit"
     },
     {
@@ -87,7 +87,7 @@ export const SERVICES_CONTENT: ServiceSectionType = {
         "Soil Improvement Recommendations",
         "Environmental Protection Guidance"
       ],
-      bgColor: "from-orange-500 to-yellow-500",
+  bgColor: "from-green-500 to-emerald-500",
       category: "Soil Management"
     },
     {
@@ -105,7 +105,7 @@ export const SERVICES_CONTENT: ServiceSectionType = {
         "Water Use Optimization",
         "Operation & Maintenance Services"
       ],
-      bgColor: "from-cyan-500 to-blue-500",
+  bgColor: "from-green-500 to-emerald-500",
       category: "Water Management"
     },
     {
@@ -123,7 +123,7 @@ export const SERVICES_CONTENT: ServiceSectionType = {
         "Financial & Credit Analysis",
         "On-Field Experiments & Testing"
       ],
-      bgColor: "from-purple-500 to-indigo-500",
+  bgColor: "from-green-500 to-emerald-500",
       category: "Research & Analytics"
     },
     {
@@ -141,7 +141,7 @@ export const SERVICES_CONTENT: ServiceSectionType = {
         "Agro-Dealer Training",
         "Localized Exhibitions & Events"
       ],
-      bgColor: "from-red-500 to-pink-500",
+  bgColor: "from-green-500 to-emerald-500",
       category: "Information & Communication"
     },
     {
@@ -159,7 +159,7 @@ export const SERVICES_CONTENT: ServiceSectionType = {
         "Day-to-day Farm Management",
         "Southern Highlands Expertise"
       ],
-      bgColor: "from-emerald-600 to-teal-600",
+  bgColor: "from-green-500 to-emerald-500",
       category: "Investment & Management"
     }
   ]
