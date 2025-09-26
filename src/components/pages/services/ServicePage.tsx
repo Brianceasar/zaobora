@@ -4,7 +4,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import { FaArrowRight, FaCheck } from "react-icons/fa6";
+import { FaCheck } from "react-icons/fa6";
 // import {FaQuoteLeft} from 'react-icons/fa';
 
 
