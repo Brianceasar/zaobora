@@ -1,7 +1,7 @@
 // src/app/services/page.tsx
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 // import Image from "next/image";
 import Link from "next/link";
 import {
@@ -25,37 +25,39 @@ const ServicesPage = () => {
   const categories = ['all', ...new Set(SERVICES_CONTENT.cards.map(service => service.category))];
 
   // Filter services based on selected category
-  const filteredServices = selectedCategory === 'all' 
-    ? SERVICES_CONTENT.cards 
+  const filteredServices = useMemo(() => {
+  return selectedCategory === 'all'
+    ? SERVICES_CONTENT.cards
     : SERVICES_CONTENT.cards.filter(service => service.category === selectedCategory);
+}, [selectedCategory]);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    },
+    { threshold: 0.1 }
+  );
 
-    if (heroRef.current) {
-      observer.observe(heroRef.current);
-    }
+  if (heroRef.current) {
+    observer.observe(heroRef.current);
+  }
 
-    return () => observer.disconnect();
-  }, []);
+  return () => observer.disconnect();
+}, []); // <-- Only run once
 
-  // Animate cards when visible or category changes
   useEffect(() => {
-    if (!isVisible) return;
-    setVisibleCards([]);
-    filteredServices.forEach((_, index) => {
-      setTimeout(() => {
-        setVisibleCards(prev => [...prev, index]);
-      }, index * 100);
-    });
-  }, [isVisible, selectedCategory, filteredServices]);
+  if (!isVisible) return;
+
+  setVisibleCards([]);
+  filteredServices.forEach((_, index) => {
+    setTimeout(() => {
+      setVisibleCards(prev => [...prev, index]);
+    }, index * 100);
+  });
+}, [isVisible, filteredServices]);
 
   return (
     
